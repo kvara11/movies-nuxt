@@ -1,0 +1,18 @@
+[
+  {
+    "title": "The Shawshank Redemption",
+    "year": 1994,
+    "genre": ["Favorites", "Drama"],
+    "imdb": "9.3",
+    "imdbId": "tt0111161",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+  },
+  {
+    "title": "Inception",
+    "year": 2010,
+    "genre": ["Favorites", "Sci-Fi"],
+    "imdb": "8.8",
+    "imdbId": "tt1375666",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg"
+  }
+]
