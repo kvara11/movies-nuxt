@@ -1,0 +1,33 @@
+[
+  {
+    "title": "Zeitgeist",
+    "year": "2007",
+    "genre": [
+      "Documentary",
+      "History"
+    ],
+    "director": "Peter Joseph",
+    "duration": "118 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjEzMDIzNzM2MF5BMl5BanBnXkFtZTcwNDM5OTk1MQ@@._V1_SX300.jpg",
+    "description": "This film gathers information from many sources and puts it together in a way that shows it is possible for people to be manipulated by large institutions, governments and economic powers. It is divided into 3 parts. 1. Religion: Pagan astrological beliefs compared to modern and ancient religions. (9:35-35:53) 2. 9/11: An overview of the numerous questionable aspects of this immensely important event. (35:54-1:09:16) 3. The Federal Reserve Bank: A history of its formation and ability to control the economy. (1:09:17-1:56:23) With many news clips from tragic events in history, audio excerpts from those who believe people are being misled about the level of freedom they have.",
+    "imdb": "8.1",
+    "imdbId": "tt1166827",
+    "language": "English",
+    "country": "USA"
+  },
+  {
+    "title": "Cosmos: A Spacetime Odyssey",
+    "year": "2014",
+    "genre": [
+      "Documentary"
+    ],
+    "director": "N/A",
+    "duration": "557 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYTRlMzk0NzctNTI3Ni00N2E2LWJiNGMtMDdlNjk1YWNmMzkyXkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "Join the heroic quest for knowledge as we set course for the stars with the twenty-first century reboot of Cosmos. Hosted by world-renowned astrophysicist Neil deGrasse Tyson, this thirteen-part ground-breaking series will venture to new worlds, trace our roots back to the hearts of ancient stars, and travel across the universe for a vision of the cosmos on the grandest scale.",
+    "imdb": "9.2",
+    "imdbId": "tt2395695",
+    "language": "English",
+    "country": "United States"
+  }
+]

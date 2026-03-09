@@ -410,5 +410,3 @@ export default YearPicker;
 
 
 
-
-## you need to rewrite oll code to Nuxt js. also give me instructions how to deploy it on vercel. your ,ission is to create simple move app wich will you i personally, with easy minimal routinglets start with this

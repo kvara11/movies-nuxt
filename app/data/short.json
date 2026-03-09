@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Emilie Muller",
+    "year": "1994",
+    "genre": [
+      "Short",
+      "Comedy"
+    ],
+    "director": "Yvon Marciano",
+    "duration": "20 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNzA2MTk1MjM1MV5BMl5BanBnXkFtZTcwNjMxOTk4Mg@@._V1_SX300.jpg",
+    "description": "Una giovane attrice in cerca di una scrittura si presenta in uno studio cinematografico per un provino. Il regista la fa accomodare e le chiede di prendere la borsa e di parlare di sé, prendendo spunto dagli oggetti contenuti nella stessa borsa. La ragazza accetta e si dimostra molto spigliata nel parlare ora di una cartolina, ora di un libro, ora di un diario, ora di altre cose e di quello che significano per lei. Alla fine del provino, la giovane è accomiatata, in attesa della prossima attrice da provinare. Intanto la borsa della ragazza è rimasta nello studio e si scopre che......è la borsa dell'assistente di studio ! Il regista si fionda all'esterno per richiamare la ragazza : è lei l'attrice che cercava !",
+    "imdb": "8.4",
+    "imdbId": "tt0179167",
+    "language": "French, Hungarian",
+    "country": "France"
+  },
+  {
+    "title": "and They Lived Happily Ever After",
+    "year": "1975",
+    "genre": [
+      "Short",
+      "Documentary"
+    ],
+    "director": "Anne Henderson, Irene Lilienheim Angelico, Kathleen Shannon",
+    "duration": "13 min",
+    "poster": "N/A",
+    "description": "N/A",
+    "imdb": "N/A",
+    "imdbId": "tt0251563",
+    "language": "N/A",
+    "country": "Canada"
+  }
+]
