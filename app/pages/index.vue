@@ -9,16 +9,34 @@ import genresData from '~/data/genres.json'
 
 interface Movie {
   title: string;
-  year: number;
+  year: number | string;
   genre: string[];
   imdb: string;
   imdbId: string;
   poster: string;
   category: string;
+  director?: string;
+  duration?: string;
+  description?: string;
+  country?: string;
+  language?: string;
 }
 
 const categories = ['All', ...genresData]
 const selectedCategory = ref('All')
+
+// Modal state
+const selectedMovie = ref<Movie | null>(null)
+const isModalOpen = ref(false)
+
+const openModal = (movie: Movie) => {
+  selectedMovie.value = movie
+  isModalOpen.value = true
+}
+
+const closeModal = () => {
+  isModalOpen.value = false
+}
 
 // Process and combine movies
 const allMovies = computed(() => {
@@ -62,7 +80,7 @@ const filteredMovies = computed(() => {
       <div v-if="filteredMovies.length > 0" class="movie-grid">
         <TransitionGroup name="fade">
           <div v-for="movie in filteredMovies" :key="movie.imdbId || movie.title" class="grid-item">
-            <MovieCard :movie="movie" />
+            <MovieCard :movie="movie" @show-details="openModal" />
           </div>
         </TransitionGroup>
       </div>
@@ -73,6 +91,13 @@ const filteredMovies = computed(() => {
         <p>Try selecting a different category or wait for updates.</p>
         <button @click="selectedCategory = 'All'" class="reset-btn">View All Movies</button>
       </div>
+
+      <!-- Movie Details Modal -->
+      <MovieModal 
+        :movie="selectedMovie" 
+        :is-open="isModalOpen" 
+        @close="closeModal" 
+      />
     </div>
   </div>
 </template>

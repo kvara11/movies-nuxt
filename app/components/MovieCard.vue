@@ -8,16 +8,18 @@ interface Movie {
   poster: string;
 }
 
+const emit = defineEmits(["show-details"]);
+
 defineProps<{
   movie: Movie;
 }>();
 </script>
 
 <template>
-  <div class="movie-card">
+  <div class="movie-card" @click="emit('show-details', movie)">
     <div class="poster-container">
       <img :src="movie.poster" :alt="movie.title" loading="lazy" />
-      <div v-if="movie.imdb" class="rating-badge">
+      <div v-if="movie.imdb && movie.imdb !== 'N/A'" class="rating-badge">
         <span>⭐ {{ movie.imdb }}</span>
       </div>
     </div>
@@ -26,7 +28,7 @@ defineProps<{
       <div class="meta">
         <span class="year">{{ movie.year }}</span>
         <span class="dot">•</span>
-        <span class="genres">{{ movie.genre.join(', ') }}</span>
+        <span class="genres">{{ movie.genre.join(", ") }}</span>
       </div>
     </div>
   </div>
@@ -48,7 +50,9 @@ defineProps<{
 
 .movie-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.3),
+    0 10px 10px -5px rgba(0, 0, 0, 0.2);
   border-color: rgba(255, 255, 255, 0.1);
 }
 
