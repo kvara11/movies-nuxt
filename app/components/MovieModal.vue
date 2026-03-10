@@ -189,14 +189,20 @@ onUnmounted(() => {
 }
 
 .poster-section {
-  position: relative;
+  position: sticky;
+  top: 0;
+  align-self: start;
   background: #0f172a;
+  height: auto;
+  max-height: 100%;
+  overflow: hidden;
 }
 
 .poster-section img {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
+  display: block;
 }
 
 .rating {
