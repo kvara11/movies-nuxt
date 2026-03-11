@@ -2,7 +2,7 @@
   <div class="app-container">
     <header class="main-header">
       <div class="container">
-        <h1>Movie<span class="accent">App</span></h1>
+        <h1>drk-star<span class="accent">-movies</span></h1>
       </div>
     </header>
     <main>
@@ -10,7 +10,7 @@
     </main>
     <footer class="main-footer">
       <div class="container">
-        <p>&copy; {{ new Date().getFullYear() }} Movie Catalog. Built with Nuxt.</p>
+        <p>&copy; {{ new Date().getFullYear() }} drk-star. Built with Nuxt.</p>
       </div>
     </footer>
   </div>
