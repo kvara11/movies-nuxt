@@ -24,7 +24,7 @@
 }
 
 .main-header {
-  padding: 2rem 0;
+  padding: 1rem 0;
   background: rgba(15, 23, 42, 0.8);
   backdrop-filter: blur(8px);
   position: sticky;

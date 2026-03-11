@@ -1,7 +1,7 @@
 <script setup lang="ts">
 interface Movie {
   title: string;
-  year: number;
+  year: number | string;
   genre: string[];
   imdb: string;
   imdbId: string;
@@ -103,6 +103,7 @@ defineProps<{
   line-height: 1.4;
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   margin: 0;

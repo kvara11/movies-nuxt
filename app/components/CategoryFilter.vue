@@ -47,7 +47,7 @@ const scroll = (direction: 'left' | 'right') => {
   gap: 0.5rem;
   margin: 1rem 0 2rem;
   position: sticky;
-  top: 5.5rem; /* Header height offset */
+  top: 4.5rem; /* Header height offset */
   z-index: 90;
   background: var(--bg-color);
   padding: 1rem 0;

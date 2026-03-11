@@ -5,14 +5,14 @@ interface Movie {
   title: string;
   year: number | string;
   genre: string[];
-  director: string;
-  duration: string;
-  description: string;
-  country: string;
   imdb: string;
   imdbId: string;
-  language: string;
   poster: string;
+  director?: string;
+  duration?: string;
+  description?: string;
+  country?: string;
+  language?: string;
 }
 
 const props = defineProps<{
@@ -74,8 +74,8 @@ onUnmounted(() => {
               <span class="year">{{ movie.year }}</span>
               <span class="dot">•</span>
               <span class="duration">{{ movie.duration }}</span>
-              <span class="dot">•</span>
-              <span class="language">{{ movie.language }}</span>
+              <!-- <span class="dot">•</span> -->
+              <!-- <span class="language">{{ movie.language }}</span> -->
             </div>
 
             <div class="genre-tags">
