@@ -6,6 +6,7 @@ import fav from '~/data/fav.json'
 import series from '~/data/series.json'
 import short from '~/data/short.json'
 import genresData from '~/data/genres.json'
+import randomIcon from '~/assets/random.svg'
 
 interface Movie {
   title: string;
@@ -35,6 +36,8 @@ const categories = computed(() => {
 });
 
 const selectedCategory = ref('All');
+const searchQuery = ref('')
+const randomMovies = ref<MovieWithId[] | null>(null)
 const filterControlsRef = ref<HTMLElement | null>(null)
 
 // Reset category when toggle changes
@@ -83,7 +86,7 @@ const allMovies = computed(() => {
     id: movie.imdbId || `movie_${index}`,
     category: movie.genre || []
   })).sort((a, b) => a.title.localeCompare(b.title));
-  
+
   // Remove duplicates by imdbId or title
   const seen = new Set();
   return data.filter(movie => {
@@ -97,19 +100,59 @@ const allMovies = computed(() => {
 const filteredMovies = computed(() => {
   let movies = allMovies.value;
 
-  if (selectedCategory.value === 'All') {
-    return movies;
+  if (selectedCategory.value !== 'All') {
+    if (filterByGenre.value) {
+      movies = movies.filter(movie =>
+        Array.isArray(movie.category)
+          ? movie.category.includes(selectedCategory.value)
+          : movie.category === selectedCategory.value
+      );
+    } else {
+      movies = movies.filter(movie => movie.source === selectedCategory.value);
+    }
   }
 
-  if (filterByGenre.value) {
-    return movies.filter(movie => 
-      Array.isArray(movie.category) 
-        ? movie.category.includes(selectedCategory.value)
-        : movie.category === selectedCategory.value
-    );
-  } else {
-    return movies.filter(movie => movie.source === selectedCategory.value);
+  const query = searchQuery.value.trim().toLowerCase()
+  if (!query) {
+    return movies
   }
+
+  return movies.filter(movie => {
+    const searchableFields = [
+      movie.title,
+      movie.director,
+      movie.description,
+      movie.source,
+      ...(movie.genre || [])
+    ]
+
+    return searchableFields.some(field =>
+      String(field || '').toLowerCase().includes(query)
+    )
+  })
+})
+
+const pickRandomMovies = () => {
+  const pool = [...filteredMovies.value]
+  if (!pool.length) {
+    randomMovies.value = null
+    return
+  }
+
+  randomMovies.value = pool
+    .sort(() => Math.random() - 0.5)
+    .slice(0, 4)
+}
+
+const clearRandomMovies = () => {
+  randomMovies.value = null
+}
+
+const displayedMovies = computed(() => randomMovies.value ?? filteredMovies.value)
+const isRandomMode = computed(() => randomMovies.value !== null)
+
+watch([selectedCategory, searchQuery, filterByGenre], () => {
+  randomMovies.value = null
 })
 </script>
 
@@ -121,21 +164,47 @@ const filteredMovies = computed(() => {
           <div class="switch-bg">
             <div class="switch-slider" :class="{ 'is-source': !filterByGenre }"></div>
           </div>
+
           <div class="switch-content">
             <span class="switch-label" :class="{ active: filterByGenre }">Genres</span>
             <span class="switch-label" :class="{ active: !filterByGenre }">Sources</span>
           </div>
         </div>
+
+        <div class="right-filters">
+          <div class="search-wrapper">
+            <input
+              v-model="searchQuery"
+              type="search"
+              class="search-input"
+              placeholder="Search movies..."
+              aria-label="Search movies"
+            />
+          </div>
+
+          <div class="random-btn-wrap">
+            <button class="random-btn" type="button" aria-label="Pick 4 random movies" @click="pickRandomMovies">
+              <img :src="randomIcon" alt="" class="random-icon" aria-hidden="true" />
+            </button>
+
+            <button
+              v-if="isRandomMode"
+              class="clear-random-btn"
+              type="button"
+              aria-label="Show all movies"
+              @click="clearRandomMovies"
+            >
+              ×
+            </button>
+          </div>
+        </div>
       </div>
 
-      <CategoryFilter 
-        :categories="categories" 
-        v-model:selectedCategory="selectedCategory" 
-      />
+      <CategoryFilter :categories="categories" v-model:selectedCategory="selectedCategory" />
 
-      <div v-if="filteredMovies.length > 0" class="movie-grid">
+      <div v-if="displayedMovies.length > 0" class="movie-grid">
         <TransitionGroup name="fade">
-          <div v-for="movie in filteredMovies" :key="movie.id" class="grid-item">
+          <div v-for="movie in displayedMovies" :key="movie.id" class="grid-item">
             <MovieCard :movie="movie" @show-details="openModal" />
           </div>
         </TransitionGroup>
@@ -149,11 +218,7 @@ const filteredMovies = computed(() => {
       </div>
 
       <!-- Movie Details Modal -->
-      <MovieModal 
-        :movie="selectedMovie" 
-        :is-open="isModalOpen" 
-        @close="closeModal" 
-      />
+      <MovieModal :movie="selectedMovie" :is-open="isModalOpen" @close="closeModal" />
     </div>
   </div>
 </template>
@@ -172,7 +237,89 @@ const filteredMovies = computed(() => {
 .filter-controls {
   display: flex;
   /* justify-content: center; */
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
   margin-top: 1rem;
+}
+
+.right-filters {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.search-wrapper {
+  width: min(320px, 100%);
+}
+
+.search-input {
+  width: 100%;
+  height: 2rem;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--card-bg);
+  color: var(--text-primary);
+  padding: 0 0.85rem;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: var(--text-secondary);
+}
+
+.search-input:focus {
+  border-color: var(--accent-color);
+}
+
+.random-btn {
+  height: 2rem;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--card-bg);
+  color: var(--text-primary);
+  padding: 0 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.random-btn:hover {
+  border-color: var(--accent-color);
+}
+
+.random-btn-wrap {
+  position: relative;
+  display: inline-flex;
+}
+
+.clear-random-btn {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: var(--card-bg);
+  color: #ff0e0e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  line-height: 1;
+  padding: 0;
+  cursor: pointer;
+}
+
+.clear-random-btn:hover {
+  color: var(--text-primary);
+  border-color: var(--accent-color);
+}
+
+.random-icon {
+  width: 1rem;
+  height: 1rem;
+  display: block;
 }
 
 .switch-wrapper {
@@ -282,6 +429,16 @@ const filteredMovies = computed(() => {
 
 /* Responsive adjustments */
 @media (max-width: 640px) {
+  .filter-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .switch-wrapper {
+    width: 100%;
+    max-width: 12rem;
+  }
+
   .movie-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
