@@ -35,10 +35,20 @@ const categories = computed(() => {
 });
 
 const selectedCategory = ref('All');
+const filterControlsRef = ref<HTMLElement | null>(null)
 
 // Reset category when toggle changes
 watch(filterByGenre, () => {
   selectedCategory.value = 'All'
+})
+
+watch(selectedCategory, async (newCategory, oldCategory) => {
+  if (!filterByGenre.value || newCategory === 'All' || newCategory === oldCategory) {
+    return
+  }
+
+  await nextTick()
+  filterControlsRef.value?.scrollIntoView({ behavior: 'smooth', block: 'start' })
 })
 
 // Modal state
@@ -106,7 +116,7 @@ const filteredMovies = computed(() => {
 <template>
   <div class="home-page">
     <div class="container">
-      <div class="filter-controls">
+      <div ref="filterControlsRef" class="filter-controls">
         <div class="switch-wrapper" @click="filterByGenre = !filterByGenre">
           <div class="switch-bg">
             <div class="switch-slider" :class="{ 'is-source': !filterByGenre }"></div>
