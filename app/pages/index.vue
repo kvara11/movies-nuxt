@@ -73,6 +73,66 @@ interface MovieWithId extends Movie {
   source: string;
 }
 
+interface YearRange {
+  start: number | null;
+  end: number | null;
+}
+
+const CURRENT_YEAR = new Date().getFullYear()
+
+const getMovieYearRange = (yearValue: Movie['year']): YearRange | null => {
+  const raw = String(yearValue ?? '').trim()
+  if (!raw) {
+    return null
+  }
+
+  const matches = raw.match(/\d{4}/g)
+  if (!matches?.length) {
+    return null
+  }
+
+  const start = Number.parseInt(matches[0], 10)
+  const hasRangeSeparator = /[-–—]/.test(raw)
+  const end = matches[1] ? Number.parseInt(matches[1], 10) : (hasRangeSeparator ? null : start)
+
+  return { start, end }
+}
+
+const extractDateFilter = (rawQuery: string) => {
+  const dateTokenRegex = /(?:^|\s)(?:year|year):(\d{4})?(?:\s*[-–—]\s*(\d{4})?)?(?=\s|$)/i
+  const match = rawQuery.match(dateTokenRegex)
+
+  if (!match) {
+    return {
+      textQuery: rawQuery.trim().toLowerCase(),
+      yearRange: null as YearRange | null
+    }
+  }
+
+  const start = match[1] ? Number.parseInt(match[1], 10) : null
+  const end = match[2] ? Number.parseInt(match[2], 10) : null
+  const yearRange = start === null && end === null ? null : { start, end }
+
+  return {
+    textQuery: rawQuery.replace(match[0], ' ').trim().toLowerCase(),
+    yearRange
+  }
+}
+
+const isMovieInRange = (movieYear: Movie['year'], queryRange: YearRange) => {
+  const movieRange = getMovieYearRange(movieYear)
+  if (!movieRange?.start) {
+    return false
+  }
+
+  const queryStart = queryRange.start ?? 0
+  const queryEnd = queryRange.end ?? CURRENT_YEAR
+  const movieStart = movieRange.start
+  const movieEnd = movieRange.end ?? CURRENT_YEAR
+
+  return movieStart <= queryEnd && movieEnd >= queryStart
+}
+
 const allMovies = computed(() => {
   const data: MovieWithId[] = [
     ...fav.map(m => ({ ...m as Movie, source: 'Fav' })),
@@ -112,22 +172,28 @@ const filteredMovies = computed(() => {
     }
   }
 
-  const query = searchQuery.value.trim().toLowerCase()
-  if (!query) {
+  const { textQuery, yearRange } = extractDateFilter(searchQuery.value)
+
+  if (yearRange) {
+    movies = movies.filter(movie => isMovieInRange(movie.year, yearRange))
+  }
+
+  if (!textQuery) {
     return movies
   }
 
   return movies.filter(movie => {
     const searchableFields = [
       movie.title,
+      movie.year,
+      movie.country,
       movie.director,
       movie.description,
-      movie.source,
       ...(movie.genre || [])
     ]
 
     return searchableFields.some(field =>
-      String(field || '').toLowerCase().includes(query)
+      String(field || '').toLowerCase().includes(textQuery)
     )
   })
 })
