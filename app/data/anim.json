@@ -32,6 +32,40 @@
     "country": "Russia"
   },
   {
+    "title": "Arcane",
+    "year": "2021–2024",
+    "genre": [
+      "Animation",
+      "Action",
+      "Adventure"
+    ],
+    "director": "N/A",
+    "duration": "N/A",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOWJhYjdjNWEtMWFmNC00ZjNkLThlZGEtN2NkM2U3NTVmMjZkXkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "The delicate balance between the rich city of Piltover and the seedy underbelly of Zaun. Tensions between these city-states boil over with the creation of hextech a way for any person to control magical energy in Piltover, and in Zaun, a new drug called shimmer transforms humans into monsters. The rivalry between the cities splits families and friends as Arcane brings life to the relationships that shape some of League of Legends' famous champions including Vi, Jinx, Caitlyn, Jayce and Viktor.",
+    "imdb": "9.0",
+    "imdbId": "tt11126994",
+    "language": "English, French",
+    "country": "United States, France"
+  },
+  {
+    "title": "Rick and Morty",
+    "year": "2013–",
+    "genre": [
+      "Animation",
+      "Adventure",
+      "Comedy"
+    ],
+    "director": "N/A",
+    "duration": "23 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZGQyZjk2MzMtMTcyNC00NGU3LTlmNjItNDExMWM4ZDFhYmQ2XkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "An animated series on adult-swim about the infinite adventures of Rick, a genius alcoholic and careless scientist, with his grandson Morty, a 14 year-old anxious boy who is not so smart. Together, they explore the infinite universes; causing mayhem and running into trouble.",
+    "imdb": "9.0",
+    "imdbId": "tt2861424",
+    "language": "English",
+    "country": "United States"
+  },
+  {
     "title": "The Boy and the Heron",
     "year": "2023",
     "genre": [
@@ -92,7 +126,7 @@
     ],
     "director": "Yoshiaki Kawajiri",
     "duration": "94 min",
-    "poster": "https://m.media-amazon.com/images/M/MV5BZWQ2MmFjYmMtYjUwYS00MDExLWJjNDAtNDBhODM2NTk4OThiXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTIyMjk0NTEyOV5BMl5BanBnXkFtZTYwOTk3MTE5._V1_.jpg",
     "description": "A Journeyman ninja by name of Jubei stumbles upon a plague, an evil clan of demons, a national crisis, and a beautiful ninja girl.",
     "imdb": "7.8",
     "imdbId": "tt0107692",
@@ -143,7 +177,7 @@
     ],
     "director": "Yoshiaki Kawajiri",
     "duration": "82 min",
-    "poster": "https://m.media-amazon.com/images/M/MV5BZjgxNWVhZjEtMzJiZC00MTA0LWI3MzYtNGU1YWVlODJkODhjXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p16193_p_v8_aa.jpg",
     "description": "There has been peace between the worlds of the mortals and the supernatural for centuries, but the balance is now being threatened. The Radical elements from the Supernatural world are crossing over into the mortal universe for the purpose of destroying the peace forever!",
     "imdb": "6.7",
     "imdbId": "tt0098692",
@@ -217,39 +251,5 @@
     "imdbId": "tt32627540",
     "language": "English",
     "country": "United States"
-  },
-  {
-    "title": "Blind Vaysha",
-    "year": "2016",
-    "genre": [
-      "Animation",
-      "Short",
-      "Drama"
-    ],
-    "director": "Theodore Ushev",
-    "duration": "8 min",
-    "poster": "https://m.media-amazon.com/images/M/MV5BNWY1ZTdiN2YtMDM1OS00NzE3LTgzNWEtMTY3YTNhZDkxZmQ3XkEyXkFqcGdeQXVyNTI5NjIyMw@@._V1_SX300.jpg",
-    "description": "From the moment she was born, Vaysha was a very special girl. With her left eye she can only see into the past, and with her right she can only see the future. The past is familiar and safe, the future is sinister and threatening. The present is a blind spot.",
-    "imdb": "7.3",
-    "imdbId": "tt5559726",
-    "language": "English",
-    "country": "Canada"
-  },
-  {
-    "title": "Balance",
-    "year": "1989",
-    "genre": [
-      "Animation",
-      "Short",
-      "Drama"
-    ],
-    "director": "Christoph Lauenstein, Wolfgang Lauenstein",
-    "duration": "7 min",
-    "poster": "https://m.media-amazon.com/images/M/MV5BZWU2OTI4NTAtZDdkMC00OGQxLTkxZGEtNTczOTEyMTNkNGQxXkEyXkFqcGc@._V1_SX300.jpg",
-    "description": "The setting is on a floating platform where a group of evenly and carefully placed men live. Each man is aware that the platform is not stable and in order not to fall to their deaths, they maintain a careful balance of weight to prevent the platform from tipping too far and cause them all to fall. This reasonably harmonious understanding is lost when one man pulls up a heavy trunk. In the ensuing struggle, balance is lost in more than one sense.",
-    "imdb": "7.9",
-    "imdbId": "tt0096880",
-    "language": "None",
-    "country": "Germany, West Germany"
   }
 ]

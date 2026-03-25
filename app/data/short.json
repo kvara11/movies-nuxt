@@ -16,19 +16,53 @@
     "country": "France"
   },
   {
-    "title": "and They Lived Happily Ever After",
-    "year": "1975",
+    "title": "Balance",
+    "year": "1989",
+    "genre": [
+      "Animation",
+      "Short",
+      "Drama"
+    ],
+    "director": "Christoph Lauenstein, Wolfgang Lauenstein",
+    "duration": "7 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZWU2OTI4NTAtZDdkMC00OGQxLTkxZGEtNTczOTEyMTNkNGQxXkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "The setting is on a floating platform where a group of evenly and carefully placed men live. Each man is aware that the platform is not stable and in order not to fall to their deaths, they maintain a careful balance of weight to prevent the platform from tipping too far and cause them all to fall. This reasonably harmonious understanding is lost when one man pulls up a heavy trunk. In the ensuing struggle, balance is lost in more than one sense.",
+    "imdb": "7.9",
+    "imdbId": "tt0096880",
+    "language": "None",
+    "country": "Germany, West Germany"
+  },
+  {
+    "title": "10:45",
+    "year": "2021",
     "genre": [
       "Short",
-      "Documentary"
+      "Drama"
     ],
-    "director": "Anne Henderson, Irene Lilienheim Angelico, Kathleen Shannon",
-    "duration": "13 min",
-    "poster": "N/A",
-    "description": "N/A",
+    "director": "Giorgi Gogichaishvili",
+    "duration": "14 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZTFhN2NmYTQtMzM5Mi00YTVkLTkzMjgtMzE3ODEzNjg5NWE2XkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "A hopeful young girl discusses her plans for travel and future with her friend via a mobile call, but gets interrupted.",
     "imdb": "N/A",
-    "imdbId": "tt0251563",
-    "language": "N/A",
+    "imdbId": "tt21671046",
+    "language": "Georgian",
+    "country": "Georgia"
+  },
+  {
+    "title": "Blind Vaysha",
+    "year": "2016",
+    "genre": [
+      "Animation",
+      "Short",
+      "Drama"
+    ],
+    "director": "Theodore Ushev",
+    "duration": "8 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNWY1ZTdiN2YtMDM1OS00NzE3LTgzNWEtMTY3YTNhZDkxZmQ3XkEyXkFqcGdeQXVyNTI5NjIyMw@@._V1_SX300.jpg",
+    "description": "From the moment she was born, Vaysha was a very special girl. With her left eye she can only see into the past, and with her right she can only see the future. The past is familiar and safe, the future is sinister and threatening. The present is a blind spot.",
+    "imdb": "7.3",
+    "imdbId": "tt5559726",
+    "language": "English",
     "country": "Canada"
   }
 ]
