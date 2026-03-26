@@ -3,19 +3,19 @@ import axios from 'axios'
 import path from 'path'
 import { fileURLToPath } from 'url'
 
+// consts!!!
 const key = "5cb2d740df2112798fd70fa4d4fac2cb";
 const token = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1Y2IyZDc0MGRmMjExMjc5OGZkNzBmYTRkNGZhYzJjYiIsIm5iZiI6MTc1NDMzOTkyMC4yOTEwMDAxLCJzdWIiOiI2ODkxMWE1MGQ5MTYyNTRjZDEyNjIzMWYiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.3dgfCDxNnLz9XOFmjTy4LgLUMdSKD5GjMHvXdo8OB2U";
-
 const omdbKey = "8cc46d71";
-
-// read json import file
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const dataPath = '../app/data/';
+const __dataPath = '../app/data/';
 
-const targetFile = 'comedy.json';
+
+// only change ->>>>>>>
+const targetFile = 'anim.json';
 const needImdbIds = [
-  
+
 ];
 
 
@@ -24,7 +24,7 @@ async function fetchMovies() {
   let allResults = []
   let errors = [];
   let genres = JSON.parse(
-    fs.readFileSync(path.join(__dirname, dataPath + '/genres.json'), 'utf8')
+    fs.readFileSync(path.join(__dirname, __dataPath + '/genres.json'), 'utf8')
   );
 
   try {
@@ -47,7 +47,7 @@ async function fetchMovies() {
       })
 
 
-      if (omdbResponse.status == 200 && omdbResponse.data.Response !== "False") {
+      if (omdbResponse.status == 200 && omdbResponse.data) {
 
         console.log(`Fetched: ${id}`)
 
@@ -87,9 +87,9 @@ async function fetchMovies() {
     console.error('Error fetching data:', error)
   }
 
-  const targetPath = path.join(__dirname, dataPath + targetFile);
-  const errorPath = path.join(__dirname, dataPath + 'errors.json');
-  const genresPath = path.join(__dirname, dataPath + 'genres.json');
+  const targetPath = path.join(__dirname, __dataPath + targetFile);
+  const errorPath = path.join(__dirname, __dataPath + 'errors.json');
+  const genresPath = path.join(__dirname, __dataPath + 'genres.json');
 
 
   if (!fs.existsSync(targetPath)) {
@@ -104,6 +104,8 @@ async function fetchMovies() {
 
   const updatedMovies = [...existingMovies, ...allResults];
   const updatedErrors = [...existingErrors, ...errors];
+
+  console.error('Starting to insert Records')
 
   fs.writeFileSync(targetPath, JSON.stringify(updatedMovies, null, 2));
   fs.writeFileSync(errorPath, JSON.stringify(updatedErrors, null, 2));

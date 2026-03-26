@@ -1159,5 +1159,21 @@
     "imdbId": "tt0071486",
     "language": "Italian, Japanese, French, German",
     "country": "Italy"
+  },
+  {
+    "title": "Walk Hard: The Dewey Cox Story",
+    "year": "2007",
+    "genre": [
+      "Comedy",
+      "Music"
+    ],
+    "director": "Jake Kasdan",
+    "duration": "96 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTk5NDMyNTk0N15BMl5BanBnXkFtZTcwMTQ4MDUzMw@@._V1_SX300.jpg",
+    "description": "The up-and-down-and-up-again story of musician Dewey Cox, whose songs would change a nation. On his rock 'n roll spiral, Cox sleeps with 411 women, marries three times, has 36 kids, stars in his own 70s TV show, collects friends ranging from Elvis to the Beatles to a chimp, and gets addicted to - and then kicks - every drug known to man; but despite it all, Cox grows into a national icon and eventually earns the love of a good woman - longtime backup singer Darlene.",
+    "imdb": "6.9",
+    "imdbId": "tt0841046",
+    "language": "English",
+    "country": "United States"
   }
 ]

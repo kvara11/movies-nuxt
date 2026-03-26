@@ -188,7 +188,7 @@ const filteredMovies = computed(() => {
       movie.year,
       movie.country,
       movie.director,
-      movie.description,
+      // movie.description,
       ...(movie.genre || [])
     ]
 

@@ -502,5 +502,54 @@
     "imdbId": "tt0944947",
     "language": "English",
     "country": "United States, United Kingdom"
+  },
+  {
+    "title": "Twin Peaks",
+    "year": "1990–1991",
+    "genre": [
+      "Crime",
+      "Drama",
+      "Mystery"
+    ],
+    "director": "N/A",
+    "duration": "1 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTExNzk2NjcxNTNeQTJeQWpwZ15BbWU4MDcxOTczOTIx._V1_SX300.jpg",
+    "description": "The body of a young girl (Laura Palmer) is washed up on a beach near the small Washington state town of Twin Peaks. FBI Special Agent Dale Cooper is called in to investigate her strange demise only to uncover a web of mystery that ultimately leads him deep into the heart of the surrounding woodland and his very own soul.",
+    "imdb": "8.7",
+    "imdbId": "tt0098936",
+    "language": "English, Icelandic, Afrikaans, Norwegian",
+    "country": "United States"
+  },
+  {
+    "title": "Silicon Valley",
+    "year": "2014–2019",
+    "genre": [
+      "Comedy"
+    ],
+    "director": "N/A",
+    "duration": "28 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjhhYmZjZjgtOTc3Mi00ZmY3LWI3MTUtYzcyOGMxYWFmN2YyXkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "In the high-tech gold rush of modern Silicon Valley, the people most qualified to succeed are the least capable of handling success. A comedy partially inspired by Mike Judge's own experiences as a Silicon Valley engineer in the late 1980s.",
+    "imdb": "8.5",
+    "imdbId": "tt2575988",
+    "language": "English",
+    "country": "United States"
+  },
+  {
+    "title": "The Expanse",
+    "year": "2015–2022",
+    "genre": [
+      "Drama",
+      "Mystery",
+      "Sci-Fi"
+    ],
+    "director": "N/A",
+    "duration": "60 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYzUyYmI3MjctY2Q2MC00NmFjLTgwZGUtNWQzZWNlYmVjNzE2XkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "Two hundred years from now, the solar system's been colonized, and police detective, Josephus Miller's given the assignment of finding a missing woman. Meanwhile, an officer of an ice freighter sees what appears to be an unprovoked attack upon the ship, by a craft from Mars. As news of the attack spreads, the incident's repercussions threaten to destabilize an already tenuous relations between Earth, Mars and the asteroid belt.",
+    "imdb": "8.5",
+    "imdbId": "tt3230854",
+    "language": "English",
+    "country": "United States"
   }
 ]

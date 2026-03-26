@@ -5326,7 +5326,7 @@
     "language": "English",
     "country": "United States"
   },
-    {
+  {
     "title": "Happily Ever After",
     "year": "2004",
     "genre": [
@@ -7442,5 +7442,277 @@
     "imdbId": "tt1697064",
     "language": "English",
     "country": "Italy"
+  },
+  {
+    "title": "eXistenZ",
+    "year": "1999",
+    "genre": [
+      "Horror",
+      "Mystery",
+      "Sci-Fi"
+    ],
+    "director": "David Cronenberg",
+    "duration": "97 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZjk3MGRhN2EtN2IyYi00NjFkLWFmNTUtNWI3MzZiYjI2ZjRkXkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "Allegra Geller, the leading game designer in the world, is testing her new virtual reality game, eXistenZ with a focus group. As they begin, she is attacked by a fanatic assassin employing a bizarre organic gun. She flees with a young marketing trainee, Ted Pikul, who is suddenly assigned as her bodyguard. Unfortunately, her pod, an organic gaming device that contains the only copy of the eXistenZ game program, is damaged. To inspect it, she talks Ted into accepting a gameport in his own body so he can play the game with her. The events leading up to this, and the resulting game lead the pair on a strange adventure where reality and their actions are impossible to determine from either their own or the game's perspective.",
+    "imdb": "6.8",
+    "imdbId": "tt0120907",
+    "language": "English",
+    "country": "United Kingdom, France, Canada"
+  },
+  {
+    "title": "I Am Legend",
+    "year": "2007",
+    "genre": [
+      "Drama",
+      "Horror",
+      "Sci-Fi"
+    ],
+    "director": "Francis Lawrence",
+    "duration": "101 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMGE1OWZkZmItNmVhMC00YzAxLTgxOTctNjg3NWExM2RmOWJkXkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "Robert Neville (Will Smith) is a scientist who was unable to stop the spread of the terrible virus that was incurable and man-made in this post-apocalyptic action thriller. Immune, Neville is now the last human survivor in what is left of New York City and perhaps the world. For three years, Neville has faithfully sent out daily radio messages, desperate to find any other survivors who might be out there. But he is not alone. Mutant victims of the plague - the Infected - lurk in the shadows - watching Neville's every move - waiting for him to make a fatal mistake. Perhaps mankind's last, best hope, Neville is driven by only one remaining mission: to find a way to reverse the effects of the virus using his own immune blood. But he knows he is outnumbered - and quickly running out of time.",
+    "imdb": "7.2",
+    "imdbId": "tt0480249",
+    "language": "English",
+    "country": "United States, United Kingdom"
+  },
+  {
+    "title": "Elvis",
+    "year": "2022",
+    "genre": [
+      "Biography",
+      "Drama",
+      "Music"
+    ],
+    "director": "Baz Luhrmann",
+    "duration": "159 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTVhZmUyMDQtY2I5Ny00OWNiLTgzNjUtMTg4YTQwMTc0OTQxXkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "The life of American music icon Elvis Presley, from his childhood to becoming a rock and movie star in the 1950s while maintaining a complex relationship with his manager, Colonel Tom Parker.",
+    "imdb": "7.3",
+    "imdbId": "tt3704428",
+    "language": "English",
+    "country": "United States, Australia"
+  },
+  {
+    "title": "Street Kings",
+    "year": "2008",
+    "genre": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "director": "David Ayer",
+    "duration": "109 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYjFiYzYyYWYtNTE2Mi00M2QyLWE3ODYtNDBiZGZiMDY0ZTdkXkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "LAPD detective Tom Ludlow is a ruthlessly efficient, unorthodox undercover cop. Captain Jack Wander always covers for Ludlow, as do even his somewhat jealous colleagues. After technically excessive violence against a vicious Korean gang during the liberation of kidnapped child sex slaves, Ludlow becomes the target of hotshot Internal Affairs captain James Biggs, who feels passed over after Wander's promotion to chief. Ludlow's ex-patrol partner, Terrence Washington, sides with IA but is killed during a shop robbery in Ludlow's presence. Ludlow works his way through the twisted rungs of the police and the deadly streets of Los Angeles for answers that lead to more and more questions.",
+    "imdb": "6.8",
+    "imdbId": "tt0421073",
+    "language": "English, Turkish",
+    "country": "United States"
+  },
+  {
+    "title": "Jackie Brown",
+    "year": "1997",
+    "genre": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Quentin Tarantino",
+    "duration": "154 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZmUxZjY3MDktNGI5NS00MTQ5LWE0YWItZWQzNmZhNjhkZDYyXkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "The middle-aged stewardess Jackie Brown smuggles money from Mexico to Los Angeles for the arms dealer Ordell Robbie. When she gets caught by the agents Ray Nicolet and Mark Dargus with ten thousand dollars and cocaine in her purse, they propose a deal to her to help them to arrest Ordell in exchange of her freedom. Meanwhile Ordell asks the 56-year-old Max Cherry, who runs a bail bond business, to release Jackie Brown with the intention of eliminating her. Jackie suspects of Ordell's intention and plots a complicated confidence game with Max to steal half a million dollars from Ordell.",
+    "imdb": "7.5",
+    "imdbId": "tt0119396",
+    "language": "English, Spanish",
+    "country": "United States"
+  },
+  {
+    "title": "Radioactive",
+    "year": "2019",
+    "genre": [
+      "Biography",
+      "Drama",
+      "Romance"
+    ],
+    "director": "Marjane Satrapi",
+    "duration": "109 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTg4NDRhY2QtZjk4NS00MDlhLTgzYmQtYjZhNmMxMzFkYzkwXkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "The incredible true story of Marie Sklodowska-Curie and her Nobel Prize-winning work that changed the world.",
+    "imdb": "6.3",
+    "imdbId": "tt6017756",
+    "language": "English",
+    "country": "United Kingdom, France, United States, China, Hungary"
+  },
+  {
+    "title": "Ran",
+    "year": "1985",
+    "genre": [
+      "Action",
+      "Drama",
+      "War"
+    ],
+    "director": "Akira Kurosawa",
+    "duration": "160 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZDk2NDY5YjktMjEyMC00OTJhLTkzM2EtY2Q4Y2RjYzc2Yjk4XkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "Japanese warlord Hidetori Ichimonji decides the time has come to retire and divide his fiefdom among his three sons. His eldest and middle sons - Taro and Jiro - agree with his decision and promise to support him for his remaining days. The youngest son Saburo disagrees with all of them arguing that there is little likelihood the three brothers will remain united. Insulted by his son's brashness, the warlord banishes Saburo. As the warlord begins his retirement, he quickly realizes that his two eldest sons selfish and have no intention of keeping their promises. It leads to war and only banished Saburo can possibly save him.",
+    "imdb": "8.2",
+    "imdbId": "tt0089881",
+    "language": "Japanese",
+    "country": "Japan, France"
+  },
+  {
+    "title": "Yojimbo",
+    "year": "1961",
+    "genre": [
+      "Action",
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Akira Kurosawa",
+    "duration": "110 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYzFkODA1N2QtY2UyMC00NTMwLWEyNzctMmE3YjIzNzE1MzY4XkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "Sanjuro, a wandering samurai enters a rural town in nineteenth century Japan. After learning from the innkeeper that the town is divided between two gangsters, he plays one side off against the other. His efforts are complicated by the arrival of the wily Unosuke, the son of one of the gangsters, who owns a revolver. Unosuke has Sanjuro beaten after he reunites an abducted woman with her husband and son, then massacres his father's opponents. During the slaughter, the samurai escapes with the help of the innkeeper; but while recuperating at a nearby temple, he learns of innkeeper's abduction by Unosuke, and returns to the town to confront him.",
+    "imdb": "8.2",
+    "imdbId": "tt0055630",
+    "language": "Japanese",
+    "country": "Japan"
+  },
+  {
+    "title": "The Count of Monte Cristo",
+    "year": "2002",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "director": "Kevin Reynolds",
+    "duration": "131 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYjQ3NWUxNDMtNGUyYS00M2E4LThmYjgtZmQ3YTU4ZWZlNTk0XkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "'The Count of Monte Cristo' is an adaptation of the Alexander Dumas tale by the same name. Dantes, a sailor who is falsely accused of treason by his best friend Fernand, who wants Dantes' girlfriend Mercedes for himself. Dantes is imprisoned on the island prison of Chateau d'If for 13 years, where he plots revenge against those who betrayed him. With the help of another prisoner, he escapes the island and proceeds to transform himself into the wealthy Count of Monte Cristo as part of his plan to exact revenge.",
+    "imdb": "7.7",
+    "imdbId": "tt0245844",
+    "language": "English",
+    "country": "Ireland, Switzerland, United Kingdom, United States"
+  },
+  {
+    "title": "Cape Fear",
+    "year": "1991",
+    "genre": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Martin Scorsese",
+    "duration": "128 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTBkNTYwZTctOTgxYS00ZmIyLTgzNDAtODJhZjg2MDUwNmFlXkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "Imprisoned for brutally assaulting a young girl, Max Cady spends his time in jail wisely - reading literature, sculpting his body to perfection and planning his violent revenge on the defence lawyer who put him behind bars. After serving his fourteen year sentence, Cady is released from prison and his rampage begins.",
+    "imdb": "7.3",
+    "imdbId": "tt0101540",
+    "language": "English",
+    "country": "United States"
+  },
+  {
+    "title": "The Imitation Game",
+    "year": "2014",
+    "genre": [
+      "Biography",
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Morten Tyldum",
+    "duration": "114 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNjI3NjY1Mjg3MV5BMl5BanBnXkFtZTgwMzk5MDQ3MjE@._V1_SX300.jpg",
+    "description": "It is based on the real life story of legendary cryptanalyst Alan Turing. The film portrays the nail-biting race against time by Turing and his brilliant team of code-breakers at Britain's top-secret Government Code and Cypher School at Bletchley Park, during the darkest days of World War II.",
+    "imdb": "8.0",
+    "imdbId": "tt2084970",
+    "language": "English, German",
+    "country": "United States"
+  },
+  {
+    "title": "The Wages of Fear",
+    "year": "1953",
+    "genre": [
+      "Adventure",
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Henri-Georges Clouzot",
+    "duration": "156 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMDdhOGMwODQtZGM2MS00NGQxLWEyZDMtOTkzMjFjYjI3ZmM2XkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "In the Central American jungle supplies of nitroglycerin are needed at a remote oil field. The oil company pays four men to deliver the supplies in two trucks. A tense rivalry develops between the two sets of drivers and on the rough remote roads the slightest jolt can result in death.",
+    "imdb": "8.1",
+    "imdbId": "tt0046268",
+    "language": "French, English, Spanish, German, Italian, Russian",
+    "country": "France, Italy"
+  },
+  {
+    "title": "Contact",
+    "year": "1997",
+    "genre": [
+      "Drama",
+      "Mystery",
+      "Sci-Fi"
+    ],
+    "director": "Robert Zemeckis",
+    "duration": "150 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BM2JiYmE1Y2UtNDQ3YS00YTZhLTk5MzAtYzEzMzIyNTM4OTRlXkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "Astronomer Dr. Ellie Arroway has long been interested in contact to faraway lands, a love fostered in her childhood by her father, Ted Arroway (David Morse), who died when she was nine-years-old, leaving her orphaned. Her current work in monitoring for extraterrestrial life is based on that love and is in part an homage to her father. Ever since funding from the National Science Foundation (N.S.F.) was pulled on her work, which is referred to some, including her N.S.F. superior David Drumlin (Tom Skerritt), as more science fiction than science, Ellie, with a few of her rogue scientist colleagues, have looked for funding from where ever they could get it to continue their work. When Ellie and her colleagues hear chatter originating from the vicinity of the star Vega, Ellie feels vindicated. But that vindication is short lived when others, including politicians, the military, religious leaders, and other scientists, such as Drumlin, try to take over her work. When the messages received from space are decoded, the project takes on a whole new dimension, which strengthens for Ellie the quest for the truth. Thrown into the mix are the unknown person who has up until now funded most of Ellie's work and what his motivations are, and Palmer Joss (Matthew McConaughey), a renowned author and theologian, who despite their fundamental differences in outlook, is mutually attracted to Ellie, that attraction based in part on intellect and their common goal of wanting to know the truth.",
+    "imdb": "7.5",
+    "imdbId": "tt0118884",
+    "language": "English, Spanish, German, Russian",
+    "country": "United States"
+  },
+  {
+    "title": "Planet of the Apes",
+    "year": "2001",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "director": "Tim Burton",
+    "duration": "120 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYjczODRhOTQtZjdkYi00MmM2LTg1ZmEtZDQ3YjA5MDJhODNhXkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "It is the year 2029: Astronaut Leo Davidson boards a pod cruiser on a Space Station on a rescue and recovery mission. But an abrupt detour through a space time wormhole lands him on a strange planet where talking apes rule over the human race. With the help of a sympathetic chimpanzee activist named Ari and a small band of human rebels, Leo leads the effort to evade the advancing Gorilla Army led by General Thade and his most trusted warrior Attar. Now the race is on to reach a sacred temple within the planet's Forbidden Zone to discover the shocking secrets of mankind's past - and the key to its future.",
+    "imdb": "5.7",
+    "imdbId": "tt0133152",
+    "language": "English",
+    "country": "United States"
+  },
+  {
+    "title": "The Great Dictator",
+    "year": "1940",
+    "genre": [
+      "Comedy",
+      "Drama",
+      "War"
+    ],
+    "director": "Charles Chaplin",
+    "duration": "125 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjc4ZjEwNDUtMjlmZS00NzQ4LTg2N2MtMGI3ZjMyMmM3ZDM2XkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "20 years after the end of WWI, in which the nation of Tomainia was on the losing side, Adenoid Hynkel has risen to power as the ruthless dictator of the country. He believes in a pure Aryan state and the decimation of the Jews. This situation is unknown to a simple Jewish Tomainian barber who has been hospitalized since a WWI battle. Upon his release the barber, who had been suffering from memory loss about the war, is shown the new persecuted life of the Jews by many living in the Jewish ghetto, including a washerwoman named Hannah with whom he begins a relationship. The barber is ultimately spared such persecution by Commander Schultz, whom he saved in that WWI battle. The lives of all Jews in Tomainia are eventually spared with a policy shift by Hynkel himself, who is doing so for ulterior motives. But those motives include a desire for world domination, starting with the invasion of neighboring Osterlich, which may be threatened by Benzino Napaloni, the dictator of neighboring Bacteria. Ultimately Schultz, who has turned traitor against Hynkel's regime, and the barber may be able to join forces to take control of the situation, using Schultz's inside knowledge of the regime's workings and the barber's uncanny resemblance to one of those in power.",
+    "imdb": "8.4",
+    "imdbId": "tt0032553",
+    "language": "English, Esperanto, Latin",
+    "country": "United States"
+  },
+  {
+    "title": "Wild at Heart",
+    "year": "1990",
+    "genre": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "director": "David Lynch",
+    "duration": "125 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMmUyNjMzMjEtMGFkNy00MDA1LWI0NGEtMDY5OGU1N2NmNDg1XkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "Lula's psychopathic mother goes crazy at the thought of Lula being with Sailor, who just got free from jail. Ignoring Sailor's probation, they set out for California. However their mother hires a killer to hunt down Sailor. Unaware of this, the two enjoy their journey and themselves being together... until they witness a young woman dying after a car accident - a bad omen.",
+    "imdb": "7.2",
+    "imdbId": "tt0100935",
+    "language": "English, Spanish",
+    "country": "United States"
   }
 ]

@@ -251,5 +251,106 @@
     "imdbId": "tt32627540",
     "language": "English",
     "country": "United States"
+  },
+  {
+    "title": "Predator: Killer of Killers",
+    "year": "2025",
+    "genre": [
+      "Animation",
+      "Action",
+      "Adventure"
+    ],
+    "director": "Dan Trachtenberg, Joshua Wassung",
+    "duration": "85 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNjM2MjA4YzQtYjBkNS00YmU3LTllOTgtMDQzMjkzM2Q4MmM5XkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "Three of the fiercest warriors in human history become prey to the ultimate killer of killers.",
+    "imdb": "7.4",
+    "imdbId": "tt36463894",
+    "language": "English",
+    "country": "United States"
+  },
+  {
+    "title": "Princess Mononoke",
+    "year": "1997",
+    "genre": [
+      "Animation",
+      "Adventure",
+      "Fantasy"
+    ],
+    "director": "Hayao Miyazaki",
+    "duration": "133 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNjAzODViNGEtMjBkYi00N2U5LWJjNjAtY2U0MGJhZTEwOTU0XkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "While protecting his village from rampaging boar-god/demon, a confident young warrior, Ashitaka, is stricken by a deadly curse. To save his life, he must journey to the forests of the west. Once there, he's embroiled in a fierce campaign that humans were waging on the forest. The ambitious Lady Eboshi and her loyal clan use their guns against the gods of the forest and a brave young woman, Princess Mononoke, who was raised by a wolf-god. Ashitaka sees the good in both sides and tries to stem the flood of blood. This is met by animosity by both sides as they each see him as supporting the enemy.",
+    "imdb": "8.3",
+    "imdbId": "tt0119698",
+    "language": "Japanese",
+    "country": "Japan"
+  },
+  {
+    "title": "Disenchantment",
+    "year": "2018–2023",
+    "genre": [
+      "Animation",
+      "Action",
+      "Adventure"
+    ],
+    "director": "N/A",
+    "duration": "2 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYjVmODJmMDYtZjU4MS00MWIxLTk1ZmQtZGRhZTM3ZDhjMTEwXkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "Princess Tiabeanie, 'Bean', is about to be married to Prince Merkimer. It is an arranged marriage and Bean isn't too happy about it. She is fun loving and free spirited and marriage is the last thing she wants to preoccupy herself with. Then she meets Luci, a demon, and Elfo, an elf, and things get rather exciting, and dangerous.",
+    "imdb": "7.2",
+    "imdbId": "tt5363918",
+    "language": "English",
+    "country": "United States"
+  },
+  {
+    "title": "The Boy, the Mole, the Fox and the Horse",
+    "year": "2022",
+    "genre": [
+      "Animation",
+      "Short",
+      "Adventure"
+    ],
+    "director": "Peter Baynton, Charlie Mackesy",
+    "duration": "32 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZDg4MjI3NGMtOTcwMC00ZWQ0LWI0YjMtNDA0YmZjN2FlYzg2XkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "Follows a boy, a mole, a fox and a horse, as they create an unexpected friendship and travel together in the boy's search for home.",
+    "imdb": "7.8",
+    "imdbId": "tt22667880",
+    "language": "English",
+    "country": "United Kingdom, United States"
+  },
+  {
+    "title": "Hell's Paradise: Jigokuraku",
+    "year": "2023–",
+    "genre": [
+      "Animation",
+      "Action",
+      "Adventure"
+    ],
+    "director": "N/A",
+    "duration": "N/A",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZjhmMjhkNjUtMGU2MC00N2IzLTg1YzItZDk5ODMxMDYxODc0XkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "In the Edo period of Japan, a select group of convicts awaiting execution are offered the chance to be pardoned and freed the Shogunate of Japan if they go to investigate an island recently discovered southwest of the Ryukyu Kingdom. the convicts are accompanied by elite guards to ensure they won't escape. Once they reach there, they find themselves overwhelmed by the island's residents, a host of monsters and their creators, a group of immortal beings. Now the convicts and guards must work together to stop the immortals and escape the island.",
+    "imdb": "8.1",
+    "imdbId": "tt13911284",
+    "language": "Japanese",
+    "country": "Japan"
+  },
+  {
+    "title": "Exploding Kittens",
+    "year": "2024–",
+    "genre": [
+      "Animation",
+      "Comedy"
+    ],
+    "director": "N/A",
+    "duration": "N/A",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZDJkOTBmNjUtM2MzMy00YmZjLWFiZTktMzk0NzM0MjU3NTNiXkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "An eternal conflict reaches epic proportions when both God and the Devil are sent to Earth in the bodies of chunky house cats.",
+    "imdb": "6.8",
+    "imdbId": "tt19734104",
+    "language": "English",
+    "country": "United States"
   }
 ]
