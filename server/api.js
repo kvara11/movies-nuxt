@@ -13,9 +13,9 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const dataPath = '../app/data/';
 
-const targetFile = 'test.json';
+const targetFile = 'comedy.json';
 const needImdbIds = [
-  'tt4857264'
+  
 ];
 
 
@@ -52,11 +52,12 @@ async function fetchMovies() {
         console.log(`Fetched: ${id}`)
 
         const movie = omdbResponse.data;
+        const movieGenres = movie.Genre.split(',').map(g => g.trim());
 
         const myMovieObj = {
           title: movie.Title,
           year: movie.Year,
-          genre: movie.Genre,
+          genre: movieGenres,
           director: movie.Director,
           duration: movie.Runtime,
           poster: movie.Poster,
@@ -66,8 +67,6 @@ async function fetchMovies() {
           language: movie.Language,
           country: movie.Country
         };
-
-        const movieGenres = movie.Genre.split(',').map(g => g.trim());
 
         for (const genre of movieGenres) {
           if (!genres.includes(genre)) {
@@ -88,7 +87,6 @@ async function fetchMovies() {
     console.error('Error fetching data:', error)
   }
 
-
   const targetPath = path.join(__dirname, dataPath + targetFile);
   const errorPath = path.join(__dirname, dataPath + 'errors.json');
   const genresPath = path.join(__dirname, dataPath + 'genres.json');
@@ -101,7 +99,6 @@ async function fetchMovies() {
     fs.writeFileSync(errorPath, '[]');
   }
 
-
   const existingMovies = JSON.parse(fs.readFileSync(targetPath, 'utf8'));
   const existingErrors = JSON.parse(fs.readFileSync('errors.json', 'utf8'));
 
@@ -111,7 +108,6 @@ async function fetchMovies() {
   fs.writeFileSync(targetPath, JSON.stringify(updatedMovies, null, 2));
   fs.writeFileSync(errorPath, JSON.stringify(updatedErrors, null, 2));
   fs.writeFileSync(genresPath, JSON.stringify(genres, null, 2));
-
 }
 
 
