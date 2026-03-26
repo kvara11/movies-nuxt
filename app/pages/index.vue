@@ -214,6 +214,10 @@ const clearRandomMovies = () => {
   randomMovies.value = null
 }
 
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+}
+
 const displayedMovies = computed(() => randomMovies.value ?? filteredMovies.value)
 const isRandomMode = computed(() => randomMovies.value !== null)
 
@@ -285,6 +289,10 @@ watch([selectedCategory, searchQuery, filterByGenre], () => {
 
       <!-- Movie Details Modal -->
       <MovieModal :movie="selectedMovie" :is-open="isModalOpen" @close="closeModal" />
+
+      <button class="scroll-top-btn" type="button" aria-label="Scroll to top" @click="scrollToTop">
+        ↑
+      </button>
     </div>
   </div>
 </template>
@@ -491,6 +499,30 @@ watch([selectedCategory, searchQuery, filterByGenre], () => {
 
 .reset-btn:hover {
   background: var(--accent-hover);
+}
+
+.scroll-top-btn {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--card-bg);
+  color: var(--text-primary);
+  font-size: 1.2rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.scroll-top-btn:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 /* Responsive adjustments */
