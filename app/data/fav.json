@@ -7714,5 +7714,20 @@
     "imdbId": "tt0100935",
     "language": "English, Spanish",
     "country": "United States"
+  },
+  {
+    "title": "Throne of Blood",
+    "year": "1957",
+    "genre": [
+      "Drama"
+    ],
+    "director": "Akira Kurosawa",
+    "duration": "110 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYTdlYjFlZTAtMTA5Yy00Y2UzLWI0ZjEtYWI2Njk0NTI4OGZlXkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "After securing a major victory on the battlefield, Taketoti Washizu and one of his commanders, Yoshiaki Miki, find themselves lost in the maze-like Spider's Web forest. They come across a spirit-like seer who tells them of their future: both have been promoted because of their victory that day; Washizu will someday be the Great Lord of the Spider's Web castle while Miki's son will someday rule as Great Lord as well. When they arrive at the castle, they learn that the first part of the prophecy is correct. Washizu has no desire to become Great Lord but his ambitious wife urges him to reconsider. When the current Great Lord makes a surprise visit to his garrison outpost, Washizu is again promoted to commander of his vanguard but his wife reminds him of the danger that comes with the position. As pressure mounts, Wahizu takes action leading to its inevitable conclusion.",
+    "imdb": "8.0",
+    "imdbId": "tt0050613",
+    "language": "Japanese",
+    "country": "Japan"
   }
 ]
