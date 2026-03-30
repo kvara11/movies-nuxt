@@ -7729,5 +7729,22 @@
     "imdbId": "tt0050613",
     "language": "Japanese",
     "country": "Japan"
+  },
+  {
+    "title": "Pirosmani",
+    "year": "1969",
+    "genre": [
+      "Biography",
+      "Drama",
+      "History"
+    ],
+    "director": "Giorgi Shengelaia",
+    "duration": "85 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYjY0Zjc4YjgtOTk5Yi00ODdiLTk0YTctYjQ4ZWY4MWFhODQzXkEyXkFqcGdeQXVyMjUwMDA4NDA@._V1_SX300.jpg",
+    "description": "The story of self-taught Georgian painter Niko Pirosmani.",
+    "imdb": "7.7",
+    "imdbId": "tt0064815",
+    "language": "Russian, Georgian, French",
+    "country": "Soviet Union"
   }
 ]

@@ -12,12 +12,13 @@ const __dirname = path.dirname(__filename);
 const __dataPath = '../app/data/';
 
 
-// only change ->>>>>>>
-const targetFile = 'anim.json';
+// <><><><><><><>  only change <<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+const targetFile = 'fav.json';
 const needImdbIds = [
 
 ];
 
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 async function fetchMovies() {
 
