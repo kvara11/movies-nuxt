@@ -1,8 +1,17 @@
+<script setup lang="ts">
+import guitarIcon from '~/assets/guitar.svg'
+</script>
+
 <template>
   <div class="app-container">
     <header class="main-header">
       <div class="container">
-        <h1>drk-star<span class="accent">-movies</span></h1>
+        <NuxtLink to="/" class="brand-link" aria-label="Go to home page">
+          <h1>drk-star<span class="accent">-movies</span></h1>
+        </NuxtLink>
+        <NuxtLink to="/tabs" class="brand-link" aria-label="Go to home page">
+          <img :src="guitarIcon" alt="" class="guitar-icon" aria-hidden="true" />
+        </NuxtLink>
       </div>
     </header>
     <main>
@@ -33,16 +42,29 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
+.guitar-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  display: block;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 h1 {
   font-size: 1.875rem;
   font-weight: 800;
   letter-spacing: -0.025em;
+}
+
+.brand-link {
+  text-decoration: none;
+  color: inherit;
 }
 
 .accent {

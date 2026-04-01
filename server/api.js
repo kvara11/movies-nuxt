@@ -9,7 +9,7 @@ const token = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1Y2IyZDc0MGRmMjExMjc5OGZkNzBmYTRk
 const omdbKey = "8cc46d71";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const __dataPath = '../app/data/';
+const __dataPath = '../app/data/movies/';
 
 
 // <><><><><><><>  only change <<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

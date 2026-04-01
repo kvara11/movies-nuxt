@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import anim from '~/data/anim.json'
-import comedy from '~/data/comedy.json'
-import doc from '~/data/doc.json'
-import fav from '~/data/fav.json'
-import series from '~/data/series.json'
-import short from '~/data/short.json'
-import genresData from '~/data/genres.json'
+import anim from '~/data/movies/anim.json'
+import comedy from '~/data/movies/comedy.json'
+import doc from '~/data/movies/doc.json'
+import fav from '~/data/movies/fav.json'
+import series from '~/data/movies/series.json'
+import short from '~/data/movies/short.json'
+import genresData from '~/data/movies/genres.json'
 import randomIcon from '~/assets/random.svg'
 
 interface Movie {
