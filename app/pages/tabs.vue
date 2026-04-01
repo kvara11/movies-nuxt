@@ -27,7 +27,7 @@ const pdfItems: PdfItem[] = Object.entries(pdfModules)
   })
   .sort((a, b) => a.title.localeCompare(b.title))
 
-const selectedPdf = ref<PdfItem | null>(pdfItems[0] ?? null)
+const selectedPdf = ref<PdfItem | null>(null)
 const isViewerMaximized = ref(false)
 
 // Change these flags to hide/show built-in PDF viewer UI parts.
