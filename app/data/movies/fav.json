@@ -7746,5 +7746,22 @@
     "imdbId": "tt0064815",
     "language": "Russian, Georgian, French",
     "country": "Soviet Union"
+  },
+  {
+    "title": "The Last Voyage of the Demeter",
+    "year": "2023",
+    "genre": [
+      "Fantasy",
+      "Horror",
+      "Thriller"
+    ],
+    "director": "André Øvredal",
+    "duration": "118 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZmRkMTFjNWMtNTVhNS00Y2EwLWJjYTAtMDRiMjA2MDJhOGI1XkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "Based on a single chapter, the Captain's Log, from Bram Stoker's classic 1897 novel Dracula, the story is set aboard the Russian schooner Demeter, which was chartered to carry private cargo - twenty-four unmarked wooden crates - from Carpathia to London. The film will detail the strange events that befell the doomed crew as they attempt to survive the ocean voyage, stalked each night by a terrifying presence on board the ship. When it finally arrived near Whitby Harbour, it was a derelict. There was no trace of the crew.",
+    "imdb": "6.1",
+    "imdbId": "tt1001520",
+    "language": "English, Romany, Russian",
+    "country": "United Kingdom, Malta, India, Germany, Canada, United States"
   }
 ]

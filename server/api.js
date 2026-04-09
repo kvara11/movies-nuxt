@@ -15,7 +15,7 @@ const __dataPath = '../app/data/movies/';
 // <><><><><><><>  only change <<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 const targetFile = 'fav.json';
 const needImdbIds = [
-
+  'tt1001520'
 ];
 
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -89,27 +89,27 @@ async function fetchMovies() {
   }
 
   const targetPath = path.join(__dirname, __dataPath + targetFile);
-  const errorPath = path.join(__dirname, __dataPath + 'errors.json');
+  // const errorPath = path.join(__dirname, __dataPath + 'errors.json');
   const genresPath = path.join(__dirname, __dataPath + 'genres.json');
 
 
   if (!fs.existsSync(targetPath)) {
     fs.writeFileSync(targetPath, '[]');
   }
-  if (!fs.existsSync(errorPath)) {
-    fs.writeFileSync(errorPath, '[]');
-  }
+  // if (!fs.existsSync(errorPath)) {
+  //   fs.writeFileSync(errorPath, '[]');
+  // }
 
   const existingMovies = JSON.parse(fs.readFileSync(targetPath, 'utf8'));
-  const existingErrors = JSON.parse(fs.readFileSync('errors.json', 'utf8'));
+  // const existingErrors = JSON.parse(fs.readFileSync('errors.json', 'utf8'));
 
   const updatedMovies = [...existingMovies, ...allResults];
-  const updatedErrors = [...existingErrors, ...errors];
+  // const updatedErrors = [...existingErrors, ...errors];
 
   console.error('Starting to insert Records')
 
   fs.writeFileSync(targetPath, JSON.stringify(updatedMovies, null, 2));
-  fs.writeFileSync(errorPath, JSON.stringify(updatedErrors, null, 2));
+  // fs.writeFileSync(errorPath, JSON.stringify(updatedErrors, null, 2));
   fs.writeFileSync(genresPath, JSON.stringify(genres, null, 2));
 }
 
