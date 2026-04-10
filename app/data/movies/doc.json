@@ -29,5 +29,21 @@
     "imdbId": "tt2395695",
     "language": "English",
     "country": "United States"
+  },
+  {
+    "title": "Dominion",
+    "year": "2018",
+    "genre": [
+      "Documentary",
+      "Horror"
+    ],
+    "director": "Chris Delforce",
+    "duration": "120 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOGFmNTIzYzctYWExYy00NTM3LWEwMzEtMjhiOGM2NDgwOWZjXkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "Dominion uses drones, hidden and handheld cameras to expose the dark underbelly of modern animal agriculture, questioning the morality and validity of humankind's dominion over the animal kingdom. While mainly focusing on animals used for food, it also explores other ways animals are exploited and abused by humans, including clothing, entertainment and research.",
+    "imdb": "8.9",
+    "imdbId": "tt5773402",
+    "language": "English",
+    "country": "Australia"
   }
 ]
