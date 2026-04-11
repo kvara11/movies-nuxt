@@ -7763,5 +7763,22 @@
     "imdbId": "tt1001520",
     "language": "English, Romany, Russian",
     "country": "United Kingdom, Malta, India, Germany, Canada, United States"
+  },
+  {
+    "title": "Inherent Vice",
+    "year": "2014",
+    "genre": [
+      "Comedy",
+      "Crime",
+      "Drama"
+    ],
+    "director": "Paul Thomas Anderson",
+    "duration": "148 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMmU3YjYzZWEtZDEzYy00YjA4LWI0YTUtY2RiMzVlYzZkZjg3XkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "During the psychedelic 60s and 70s Larry \"Doc\" Sportello is surprised by his former girlfriend and her plot for her billionaire boyfriend, his wife, and her boyfriend. A plan for kidnapping gets shaken up by the oddball characters entangled in this groovy kidnapping romp based upon the novel by Thomas Pynchon.",
+    "imdb": "6.6",
+    "imdbId": "tt1791528",
+    "language": "English, Japanese",
+    "country": "United States"
   }
 ]
