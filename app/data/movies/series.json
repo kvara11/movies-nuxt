@@ -551,5 +551,22 @@
     "imdbId": "tt3230854",
     "language": "English",
     "country": "United States"
+  },
+  {
+    "title": "Shogun",
+    "year": "2024–2026",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "director": "N/A",
+    "duration": "N/A",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZmJkMDRjYzEtMWI3Ny00OWE3LWJlNTItMGQ1MTQzMzc3NDY5XkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "Set in the 17th Century, the story is told from the perspective of British hero John Blackthorne, a sailor who rises from outsider to samurai, while being used as a pawn in Japanese leader Toranaga's struggle to reach the top of the ruling chain, or Shogun.",
+    "imdb": "8.6",
+    "imdbId": "tt2788316",
+    "language": "Japanese, English",
+    "country": "United States"
   }
 ]
