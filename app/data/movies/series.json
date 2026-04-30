@@ -568,5 +568,22 @@
     "imdbId": "tt2788316",
     "language": "Japanese, English",
     "country": "United States"
+  },
+  {
+    "title": "Altered Carbon",
+    "year": "2018–2020",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "director": "N/A",
+    "duration": "60 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTY4MWY1ZDktZjQxZS00ZDc5LWE3OTctZDU5MzQ2ZWU5ZTJkXkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "ALTERED CARBON is set in a future where consciousness is digitized and stored in cortical stacks implanted in the spine, allowing humans to survive physical death by having their memories and consciousness \"re-sleeved\" into new bodies. The story follows specially trained \"Envoy\" soldier Takeshi Kovacs, who is downloaded from an off-world prison and into a combat ready sleeve at the behest of Laurens Bancroft, a highly influential aristocrat. Bancroft was killed, and the last automatic backup of his stack was made hours before his death, leaving him with no memory of who killed him and why. While police ruled it a suicide, Bancroft is convinced he was murdered and wants Kovacs to find out the truth.",
+    "imdb": "7.9",
+    "imdbId": "tt2261227",
+    "language": "English, Spanish, Arabic, German",
+    "country": "United States"
   }
 ]
