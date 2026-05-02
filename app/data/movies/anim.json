@@ -337,5 +337,22 @@
     "imdbId": "tt19734104",
     "language": "English",
     "country": "United States"
+  },
+  {
+    "title": "Futurama",
+    "year": "1999–",
+    "genre": [
+      "Animation",
+      "Adventure",
+      "Comedy"
+    ],
+    "director": "N/A",
+    "duration": "22 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNjYxNDgxM2MtYzNmNi00ODYwLWI0ZmEtZDM3M2QwZGQ3MWI3XkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "Philip J. Fry is a twenty-five-year-old pizza delivery boy whose life is going nowhere. When he accidentally freezes himself on December 31, 1999, he wakes up one thousand years in the future, and has a chance to make a fresh start. He goes to work for the Planet Express Corporation, a futuristic delivery service that transports packages to all five quadrants of the universe. His companions include the delivery ship's Captain, Leela, a beautiful one-eyed female alien who kicks some serious butt, and Bender, a robot with very human flaws.",
+    "imdb": "8.5",
+    "imdbId": "tt0149460",
+    "language": "English",
+    "country": "United States"
   }
 ]
