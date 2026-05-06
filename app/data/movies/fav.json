@@ -7748,5 +7748,22 @@
     "imdbId": "tt1791528",
     "language": "English, Japanese",
     "country": "United States"
+  },
+  {
+    "title": "The Shape of Water",
+    "year": "2017",
+    "genre": [
+      "Drama",
+      "Fantasy",
+      "Romance"
+    ],
+    "director": "Guillermo del Toro",
+    "duration": "123 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOGFlMTM2MTgtZDdlMy00ZDZlLWFjOTUtZDMzMGEwNmNiMWY0XkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "From master storyteller Guillermo del Toro comes THE SHAPE OF WATER, an otherworldly fable set against the backdrop of Cold War era America circa 1962. In the hidden high-security government laboratory where she works, lonely Elisa (Sally Hawkins) is trapped in a life of isolation. Elisa's life is changed forever when she and co-worker Zelda (Octavia Spencer) discover a secret classified experiment. Rounding out the cast are Michael Shannon, Richard Jenkins, Michael Stuhlbarg, and Doug Jones.",
+    "imdb": "7.3",
+    "imdbId": "tt5580390",
+    "language": "English, American Sign , Russian, French",
+    "country": "United States, Mexico"
   }
 ]
