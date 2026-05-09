@@ -354,5 +354,22 @@
     "imdbId": "tt0149460",
     "language": "English",
     "country": "United States"
+  },
+  {
+    "title": "Mad God",
+    "year": "2021",
+    "genre": [
+      "Animation",
+      "Fantasy",
+      "Horror"
+    ],
+    "director": "Phil Tippett",
+    "duration": "83 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTE0YzIyZjEtNDI3Mi00NTBlLTg3ZWItOWFjOWM1NGZjYmY1XkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "The Assassin travels through a nightmare underworld of tortured souls, ruined cities and wretched monstrosities forged from the primordial horrors of the unconscious mind of Phil Tippett, the world's preeminent stop-motion animator.",
+    "imdb": "6.8",
+    "imdbId": "tt15090124",
+    "language": "Italian, None",
+    "country": "United States"
   }
 ]
