@@ -7765,5 +7765,20 @@
     "imdbId": "tt5580390",
     "language": "English, American Sign , Russian, French",
     "country": "United States, Mexico"
+  },
+  {
+    "title": "Bicycle Thieves",
+    "year": "1948",
+    "genre": [
+      "Drama"
+    ],
+    "director": "Vittorio De Sica",
+    "duration": "89 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjIzMzAyMzg1Nl5BMl5BanBnXkFtZTgwMzMyNzk0MTE@._V1_SX300.jpg",
+    "description": "Antonio Ricci, an unemployed man in the depressed post-WWII economy of Italy, finally gets a job hanging up posters, but he needs a bicycle. But when his bicycle is stolen,, he and son walk the streets of Rome looking for it. Antonio finally manages to locate the thief, but with no proof he must abandon his cause. But he and his son know perfectly well that without a bike, Antonio won't be able to keep his job.",
+    "imdb": "8.2",
+    "imdbId": "tt0040522",
+    "language": "Italian, German",
+    "country": "Italy"
   }
 ]
