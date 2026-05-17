@@ -602,5 +602,22 @@
     "imdbId": "tt9170108",
     "language": "English",
     "country": "United States"
+  },
+  {
+    "title": "Halo",
+    "year": "2022–2024",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "director": "N/A",
+    "duration": "N/A",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYzNkODg3OTYtM2EyZC00NmEyLTgzZDktYjY5NGNjZmQ5ZDRiXkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "With the galaxy on the brink of destruction, Master Chief John-117 leads his team of Spartans against the alien threat known as the Covenant.",
+    "imdb": "7.3",
+    "imdbId": "tt2934286",
+    "language": "English",
+    "country": "United States"
   }
 ]
