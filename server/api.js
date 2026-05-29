@@ -3,6 +3,12 @@ import axios from 'axios'
 import path from 'path'
 import { fileURLToPath } from 'url'
 
+// @ts-check
+
+/**
+ * @typedef {'comedy.json' | 'anim.json' | 'doc.json' | 'fav.json' | 'short.json' | 'series.json'} TargetFile
+ */
+
 // consts!!!
 const key = "5cb2d740df2112798fd70fa4d4fac2cb";
 const token = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1Y2IyZDc0MGRmMjExMjc5OGZkNzBmYTRkNGZhYzJjYiIsIm5iZiI6MTc1NDMzOTkyMC4yOTEwMDAxLCJzdWIiOiI2ODkxMWE1MGQ5MTYyNTRjZDEyNjIzMWYiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.3dgfCDxNnLz9XOFmjTy4LgLUMdSKD5GjMHvXdo8OB2U";
@@ -13,9 +19,11 @@ const __dataPath = '../app/data/movies/';
 
 
 // <><><><><><><>  only change <<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-const targetFile = 'fav.json';
+/** @type {TargetFile} */
+let targetFile = 'comedy.json';
+
 const needImdbIds = [
-  
+  ''
 ];
 
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -34,6 +42,11 @@ async function fetchMovies() {
 
     for (const id of needImdbIds) {
 
+      if (!id) {
+        console.log('Id is empty');
+        continue;
+      }
+      
       const omdbResponse = await axios.get('https://www.omdbapi.com/', {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -88,29 +101,31 @@ async function fetchMovies() {
     console.error('Error fetching data:', error)
   }
 
-  const targetPath = path.join(__dirname, __dataPath + targetFile);
-  // const errorPath = path.join(__dirname, __dataPath + 'errors.json');
-  const genresPath = path.join(__dirname, __dataPath + 'genres.json');
-
-
-  if (!fs.existsSync(targetPath)) {
-    fs.writeFileSync(targetPath, '[]');
+  if (allResults && allResults.length > 0) {
+    const targetPath = path.join(__dirname, __dataPath + targetFile);
+    // const errorPath = path.join(__dirname, __dataPath + 'errors.json');
+    const genresPath = path.join(__dirname, __dataPath + 'genres.json');
+  
+  
+    if (!fs.existsSync(targetPath)) {
+      fs.writeFileSync(targetPath, '[]');
+    }
+    // if (!fs.existsSync(errorPath)) {
+    //   fs.writeFileSync(errorPath, '[]');
+    // }
+  
+    const existingMovies = JSON.parse(fs.readFileSync(targetPath, 'utf8'));
+    // const existingErrors = JSON.parse(fs.readFileSync('errors.json', 'utf8'));
+  
+    const updatedMovies = [...existingMovies, ...allResults];
+    // const updatedErrors = [...existingErrors, ...errors];
+  
+    console.error('Starting to insert Records')
+  
+    fs.writeFileSync(targetPath, JSON.stringify(updatedMovies, null, 2));
+    // fs.writeFileSync(errorPath, JSON.stringify(updatedErrors, null, 2));
+    fs.writeFileSync(genresPath, JSON.stringify(genres, null, 2));
   }
-  // if (!fs.existsSync(errorPath)) {
-  //   fs.writeFileSync(errorPath, '[]');
-  // }
-
-  const existingMovies = JSON.parse(fs.readFileSync(targetPath, 'utf8'));
-  // const existingErrors = JSON.parse(fs.readFileSync('errors.json', 'utf8'));
-
-  const updatedMovies = [...existingMovies, ...allResults];
-  // const updatedErrors = [...existingErrors, ...errors];
-
-  console.error('Starting to insert Records')
-
-  fs.writeFileSync(targetPath, JSON.stringify(updatedMovies, null, 2));
-  // fs.writeFileSync(errorPath, JSON.stringify(updatedErrors, null, 2));
-  fs.writeFileSync(genresPath, JSON.stringify(genres, null, 2));
 }
 
 

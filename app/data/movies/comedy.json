@@ -1223,5 +1223,22 @@
     "imdbId": "tt0332379",
     "language": "English",
     "country": "Germany, United States"
+  },
+  {
+    "title": "Burn After Reading",
+    "year": "2008",
+    "genre": [
+      "Comedy",
+      "Crime",
+      "Drama"
+    ],
+    "director": "Ethan Coen, Joel Coen",
+    "duration": "96 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjdmNjJjMzAtMmJkMy00MDJlLTgxYjctNDU3YjBkMmJhM2M5XkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "Osbourne Cox, a Balkan expert, resigned from the CIA because of a drinking problem, so he begins a memoir. His wife wants a divorce and expects her lover, Harry, a philandering State Department marshal, to leave his wife. A CD-ROM falls out of a gym bag at a Georgetown fitness center. Two employees there try to turn it into cash: Linda, who wants money for cosmetic surgery, and Chad, an amiable goof. Information on the disc leads them to Osbourne who rejects their sales pitch; then they visit the Russian embassy. To sweeten the pot, they decide they need more of Osbourne's secrets. Meanwhile, Linda's boss likes her, and Harry's wife leaves for a book tour. All roads lead to Osbourne's house.",
+    "imdb": "7.0",
+    "imdbId": "tt0887883",
+    "language": "English",
+    "country": "United Kingdom, France, United States"
   }
 ]
