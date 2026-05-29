@@ -371,5 +371,22 @@
     "imdbId": "tt15090124",
     "language": "Italian, None",
     "country": "United States"
+  },
+  {
+    "title": "Samurai Champloo",
+    "year": "2004–2005",
+    "genre": [
+      "Animation",
+      "Action",
+      "Adventure"
+    ],
+    "director": "N/A",
+    "duration": "24 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjBhZTY4NzMtOGU3OC00ZDllLWE2ZjUtMGFjYTU5OWI0YTQ2XkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "Fuu, a waitress who works in a teahouse, rescues two master swordsmen, Mugen and Jin, from their execution to help her find the \"samurai who smells of sunflowers.\"",
+    "imdb": "8.5",
+    "imdbId": "tt0423731",
+    "language": "Japanese, English",
+    "country": "Japan, Poland"
   }
 ]
