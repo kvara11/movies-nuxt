@@ -7780,5 +7780,22 @@
     "imdbId": "tt0040522",
     "language": "Italian, German",
     "country": "Italy"
+  },
+  {
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "year": "2001",
+    "genre": [
+      "Adventure",
+      "Drama",
+      "Fantasy"
+    ],
+    "director": "Peter Jackson",
+    "duration": "178 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNzIxMDQ2YTctNDY4MC00ZTRhLTk4ODQtMTVlOWY4NTdiYmMwXkEyXkFqcGc@._V1_QL75_UX380_CR0,1,380,562_.jpg",
+    "description": "An ancient Ring thought lost for centuries has been found, and through a strange twist of fate has been given to a small Hobbit named Frodo. When Gandalf discovers the Ring is in fact the One Ring of the Dark Lord Sauron, Frodo must make an epic quest to Mount Doom in order to destroy it. However, he does not go alone. He is joined by Gandalf, Legolas the elf, Gimli the Dwarf, Aragorn, Boromir, and his three Hobbit friends Merry, Pippin, and Samwise. Through mountains, snow, darkness, forests, rivers and plains, facing evil and danger at every corner the Fellowship of the Ring must go. Their quest to destroy the One Ring is the only hope for the end of the Dark Lords reign.",
+    "imdb": "8.9",
+    "imdbId": "tt0120737",
+    "language": "English, Sindarin",
+    "country": "New Zealand, United States"
   }
 ]
