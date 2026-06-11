@@ -619,5 +619,22 @@
     "imdbId": "tt2934286",
     "language": "English",
     "country": "United States"
+  },
+  {
+    "title": "The Last of Us",
+    "year": "2023–",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "director": "N/A",
+    "duration": "18S min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYWI3ODJlMzktY2U5NC00ZjdlLWE1MGItNWQxZDk3NWNjN2RhXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "description": "20 years after modern civilization has been destroyed, Joel, a hardened survivor, is hired to smuggle Ellie, a 14-year-old girl, out of an oppressive quarantine zone. What starts as a small job soon becomes a brutal heartbreaking journey as they both must traverse the U.S. and depend on each other for survival.",
+    "imdb": "8.5",
+    "imdbId": "tt3581920",
+    "language": "English, Indonesian",
+    "country": "Canada, United States"
   }
 ]
