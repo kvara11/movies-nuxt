@@ -7,6 +7,7 @@ import series from '~/data/movies/series.json'
 import short from '~/data/movies/short.json'
 import genresData from '~/data/movies/genres.json'
 import randomIcon from '~/assets/random.svg'
+import descIcon from '~/assets/desc.svg'
 
 interface Movie {
   title: string;
@@ -39,6 +40,7 @@ const selectedCategory = ref('All');
 const searchQuery = ref('')
 const randomMovies = ref<MovieWithId[] | null>(null)
 const filterControlsRef = ref<HTMLElement | null>(null)
+const orderDesc = ref(false);
 
 // Reset category when toggle changes
 watch(filterByGenre, () => {
@@ -143,19 +145,31 @@ const allMovies = computed(() => {
     ...series.map(m => ({ ...m as Movie, source: 'Series' }))
   ].map((movie, index) => ({
     ...movie,
+    _index: index,
     id: movie.imdbId || `movie_${index}`,
     category: movie.genre || []
-  })).sort((a, b) => a.title.localeCompare(b.title));
+  }));
 
-  // Remove duplicates by imdbId or title
-  const seen = new Set();
-  return data.filter(movie => {
+  // remove duplicates (keep first occurrence in JSON order)
+  const seen = new Set<string>();
+
+  const unique = data.filter(movie => {
     const key = movie.imdbId || movie.title;
-    const isDuplicate = seen.has(key);
+    if (seen.has(key)) return false;
     seen.add(key);
-    return !isDuplicate;
+    return true;
   });
-})
+
+  // default: alphabetical
+  const sorted = unique.sort((a, b) => a.title.localeCompare(b.title));
+
+  // override if toggle is enabled
+  if (orderDesc.value) {
+    return [...unique].sort((a, b) => b._index - a._index);
+  }
+
+  return sorted;
+});
 
 const filteredMovies = computed(() => {
   let movies = allMovies.value;
@@ -230,26 +244,31 @@ watch([selectedCategory, searchQuery, filterByGenre], () => {
   <div class="home-page">
     <div class="container">
       <div ref="filterControlsRef" class="filter-controls">
-        <div class="switch-wrapper" @click="filterByGenre = !filterByGenre">
-          <div class="switch-bg">
-            <div class="switch-slider" :class="{ 'is-source': !filterByGenre }"></div>
+
+        <div class="left-filters">
+          <div class="switch-wrapper" @click="filterByGenre = !filterByGenre">
+            <div class="switch-bg">
+              <div class="switch-slider" :class="{ 'is-source': !filterByGenre }"></div>
+            </div>
+
+            <div class="switch-content">
+              <span class="switch-label" :class="{ active: filterByGenre }">Genres</span>
+              <span class="switch-label" :class="{ active: !filterByGenre }">Sources</span>
+            </div>
+          </div>
+          <div>
+            <label class="desc-flex" title="order by desc">
+              <img :src="descIcon" alt="" class="random-icon" aria-hidden="true" />
+              <input type="checkbox" v-model="orderDesc" />
+            </label>
           </div>
 
-          <div class="switch-content">
-            <span class="switch-label" :class="{ active: filterByGenre }">Genres</span>
-            <span class="switch-label" :class="{ active: !filterByGenre }">Sources</span>
-          </div>
         </div>
 
         <div class="right-filters">
           <div class="search-wrapper">
-            <input
-              v-model="searchQuery"
-              type="search"
-              class="search-input"
-              placeholder="Search movies..."
-              aria-label="Search movies"
-            />
+            <input v-model="searchQuery" type="search" class="search-input" placeholder="Search movies..."
+              aria-label="Search movies" />
           </div>
 
           <div class="random-btn-wrap">
@@ -257,13 +276,8 @@ watch([selectedCategory, searchQuery, filterByGenre], () => {
               <img :src="randomIcon" alt="" class="random-icon" aria-hidden="true" />
             </button>
 
-            <button
-              v-if="isRandomMode"
-              class="clear-random-btn"
-              type="button"
-              aria-label="Show all movies"
-              @click="clearRandomMovies"
-            >
+            <button v-if="isRandomMode" class="clear-random-btn" type="button" aria-label="Show all movies"
+              @click="clearRandomMovies">
               ×
             </button>
           </div>
@@ -315,6 +329,20 @@ watch([selectedCategory, searchQuery, filterByGenre], () => {
   align-items: center;
   gap: 1rem;
   margin-top: 1rem;
+}
+
+.left-filters {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.desc-flex {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
 }
 
 .right-filters {
