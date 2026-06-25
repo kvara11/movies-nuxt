@@ -636,5 +636,22 @@
     "imdbId": "tt3581920",
     "language": "English, Indonesian",
     "country": "Canada, United States"
+  },
+  {
+    "title": "Hot Dog",
+    "year": "2003–2013",
+    "genre": [
+      "Comedy",
+      "Crime",
+      "Thriller"
+    ],
+    "director": "N/A",
+    "duration": "50 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BM2Y4NzliMjgtMzZlMy00YmI4LWE0ZWUtODFmZGExMjQyZTk4XkEyXkFqcGdeQXVyMjM5MDgwNzc@._V1_SX300.jpg",
+    "description": "Two detectives Bidzina Tabagari and Lekso Nizharadze try to investigate murder cases connected to the influential businessmen, politicians and members of national security.",
+    "imdb": "9.4",
+    "imdbId": "tt6722972",
+    "language": "Georgian",
+    "country": "N/A"
   }
 ]
