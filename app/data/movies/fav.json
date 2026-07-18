@@ -7797,5 +7797,21 @@
     "imdbId": "tt0120737",
     "language": "English, Sindarin",
     "country": "New Zealand, United States"
+  },
+  {
+    "title": "1984",
+    "year": "1984",
+    "genre": [
+      "Drama",
+      "Sci-Fi"
+    ],
+    "director": "Michael Radford",
+    "duration": "113 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYTlhOTc3M2QtNmRhNy00ZjhhLTg3MzgtMGRhZjhkZTEwMjUzXkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "Longing for freedom, the lowly bureaucrat of the Ministry of Truth, Winston Smith, summons up the courage to write down his unspoken desires in his little secret diary. Serving silently at the pleasure of the grim, autocratic hyper-state of Oceania, Smith knows that the English Socialist Party's supreme leader, the omnipotent Big Brother, watches his every move, condemning the already terrified people into a life of slavery. Under those dire circumstances--as the totalitarian government's suffocating stranglehold tightens more and more--Julia, another equally seditious party member, crosses paths with Winston, and a dangerous clandestine affair begins. Now, there's no turning back, and, sooner or later, the illicit couple will have to pay for its hideous crimes against the dictatorial state. What makes a good citizen?",
+    "imdb": "7.0",
+    "imdbId": "tt0087803",
+    "language": "English",
+    "country": "United Kingdom, West Germany, Netherlands"
   }
 ]
