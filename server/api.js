@@ -20,10 +20,10 @@ const __dataPath = '../app/data/movies/';
 
 // <><><><><><><>  only change <<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 /** @type {TargetFile} */
-let targetFile = 'comedy.json';
+let targetFile = 'fav.json';
 
 const needImdbIds = [
-  ''
+  'tt0040522'
 ];
 
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -36,6 +36,11 @@ async function fetchMovies() {
     fs.readFileSync(path.join(__dirname, __dataPath + '/genres.json'), 'utf8')
   );
 
+  const incrementPath = path.join(__dirname, __dataPath + 'increment.json');
+  const incrementValue = JSON.parse(fs.readFileSync(incrementPath, 'utf8'));
+  const newId = ++incrementValue.id;
+  console.log(newId);
+  
   try {
 
     // http://www.omdbapi.com/?i=tt1166827&plot=full
@@ -67,8 +72,9 @@ async function fetchMovies() {
 
         const movie = omdbResponse.data;
         const movieGenres = movie.Genre.split(',').map(g => g.trim());
-
+        
         const myMovieObj = {
+          id: newId,
           title: movie.Title,
           year: movie.Year,
           genre: movieGenres,
@@ -120,11 +126,14 @@ async function fetchMovies() {
     const updatedMovies = [...existingMovies, ...allResults];
     // const updatedErrors = [...existingErrors, ...errors];
   
-    console.error('Starting to insert Records')
+    console.error('READY >> ')
   
     fs.writeFileSync(targetPath, JSON.stringify(updatedMovies, null, 2));
     // fs.writeFileSync(errorPath, JSON.stringify(updatedErrors, null, 2));
     fs.writeFileSync(genresPath, JSON.stringify(genres, null, 2));
+    fs.writeFileSync(incrementPath, JSON.stringify({ id: newId }, null, 2));
+
+    console.error('DONE << ')
   }
 }
 
@@ -146,6 +155,27 @@ async function convertGenres() {
 }
 
 
+async function addColumn(columnName, defaultValue) {
+
+  const targetPath = path.join(__dirname, __dataPath + targetFile);
+  const incrementPath = path.join(__dirname, __dataPath + 'increment.json');
+  const incrementValue = JSON.parse(fs.readFileSync(incrementPath, 'utf8'));
+  const existingMovies = JSON.parse(fs.readFileSync(targetPath, 'utf8'));
+  
+  let id = incrementValue.id;
+  const updatedMovies = existingMovies.map(movie => ({
+    ...movie,
+    [columnName]: id++,
+  }));
+
+  // Optional: Save back to the JSON file
+  console.error('Starting to insert Records')
+  
+  fs.writeFileSync(targetPath, JSON.stringify(updatedMovies, null, 2));
+  fs.writeFileSync(incrementPath, JSON.stringify({ id }, null, 2));
+}
+
+// addColumn('id', 1)
 fetchMovies()
 
 
