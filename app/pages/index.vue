@@ -10,6 +10,7 @@ import randomIcon from '~/assets/random.svg'
 import descIcon from '~/assets/desc.svg'
 
 interface Movie {
+  id: number,
   title: string;
   year: number | string;
   genre: string[];
@@ -146,7 +147,8 @@ const allMovies = computed(() => {
   ].map((movie, index) => ({
     ...movie,
     _index: index,
-    id: movie.imdbId || `movie_${index}`,
+    imdbId: movie.imdbId || `movie_${index}`,
+    id: movie.id,
     category: movie.genre || []
   }));
 
@@ -165,7 +167,8 @@ const allMovies = computed(() => {
 
   // override if toggle is enabled
   if (orderDesc.value) {
-    return [...unique].sort((a, b) => b._index - a._index);
+    return [...unique].sort((a, b) => b.id - a.id);
+    
   }
 
   return sorted;
@@ -288,7 +291,7 @@ watch([selectedCategory, searchQuery, filterByGenre], () => {
 
       <div v-if="displayedMovies.length > 0" class="movie-grid">
         <TransitionGroup name="fade">
-          <div v-for="movie in displayedMovies" :key="movie.id" class="grid-item">
+          <div v-for="movie in displayedMovies" :key="movie.imdbId" class="grid-item">
             <MovieCard :movie="movie" @show-details="openModal" />
           </div>
         </TransitionGroup>
