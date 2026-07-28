@@ -376,10 +376,10 @@ onUnmounted(() => {
     grid-template-columns: 1fr;
   }
 
-  .close-btn {
+  /* .close-btn {
     top: 63px;
     position: fixed;
     right: 45px;
-  }
+  } */
 }
 </style>
