@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, onUnmounted } from "vue";
+import { onMounted, onUnmounted, watch } from "vue";
 
 interface Movie {
   title: string;
@@ -34,11 +34,26 @@ const handleKeydown = (e: KeyboardEvent) => {
 
 onMounted(() => {
   window.addEventListener("keydown", handleKeydown);
+  document.body.classList.remove('modal-open')
 });
 
 onUnmounted(() => {
   window.removeEventListener("keydown", handleKeydown);
 });
+
+watch(
+  () => props.isOpen,
+  (newVal) => {
+    if (typeof document === 'undefined') return;
+
+    if (newVal) {
+      document.body.classList.add('modal-open');
+    } else {
+      document.body.classList.remove('modal-open');
+    }
+  },
+  { immediate: true }
+);
 </script>
 
 
@@ -376,10 +391,58 @@ onUnmounted(() => {
     grid-template-columns: 1fr;
   }
 
-  /* .close-btn {
+  .close-btn {
     top: 63px;
     position: fixed;
     right: 45px;
-  } */
+  }
 }
+
+
+
+
+
+
+
+
+
+/* 
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  overflow-y: auto;
+}
+
+.close-btn {
+  position: sticky;
+  top: 20px;
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
+  z-index: 99;
+}
+
+.modal-enter-active .close-btn {
+  opacity: 0;
+  transition: opacity 0.3s ease 0.2s;
+}
+
+.modal-enter-to .close-btn {
+  opacity: 1;
+}
+*/
+
+
+body.modal-open {
+  overflow: hidden;
+  touch-action: none;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+} 
 </style>
