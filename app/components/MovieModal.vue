@@ -157,7 +157,7 @@ onUnmounted(() => {
   position: absolute;
   top: 1.25rem;
   right: 1.25rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 89, 92, 0.753);
   border: none;
   color: white;
   width: 2.5rem;
@@ -168,12 +168,28 @@ onUnmounted(() => {
   justify-content: center;
   cursor: pointer;
   transition: all 0.2s ease;
+  opacity: 1;
   z-index: 10;
 }
 
 .close-btn:hover {
   background: rgba(255, 255, 255, 0.2);
   transform: rotate(90deg);
+}
+
+.modal-enter-active .close-btn {
+  opacity: 0; 
+  transition: opacity 0.3s ease 0.2s; 
+}
+
+.modal-enter-active,
+.modal-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.modal-enter-from,
+.modal-leave-to {
+  opacity: 0;
 }
 
 .imdb-section {
@@ -358,6 +374,12 @@ onUnmounted(() => {
 
   .details-grid {
     grid-template-columns: 1fr;
+  }
+
+  .close-btn {
+    top: 63px;
+    position: fixed;
+    right: 45px;
   }
 }
 </style>
