@@ -23,7 +23,7 @@ const __dataPath = '../app/data/movies/';
 let targetFile = 'fav.json';
 
 const needImdbIds = [
-  'tt0040522'
+  'tt0075963'
 ];
 
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
