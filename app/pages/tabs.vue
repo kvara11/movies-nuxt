@@ -162,6 +162,8 @@ h2 {
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 0.75rem;
   padding: 0.75rem;
+  overflow: hidden;
+
 }
 
 .viewer-wrap.maximized {
@@ -198,15 +200,40 @@ h2 {
   border-color: var(--accent-color);
 }
 
-.pdf-viewer {
+/* .pdf-viewer {
   width: 100%;
   min-height: 72vh;
   border: 0;
   border-radius: 0.5rem;
   background: #fff;
+} */
+
+.pdf-viewer {
+  width: 100%;
+  height: 72vh;
+  border: 0;
+  border-radius: 0.5rem;
+  background: #fff;
+  max-width: 100%;
 }
 
 .viewer-wrap.maximized .pdf-viewer {
   min-height: calc(100vh - 5.5rem);
+}
+
+
+@media (max-width: 768px) {
+  .viewer-wrap {
+    padding: 0.4rem;
+  }
+
+  .viewer-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pdf-viewer {
+    height: 85vh;
+  }
 }
 </style>
