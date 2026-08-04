@@ -8317,5 +8317,23 @@
     "imdbId": "tt0405296",
     "language": "English",
     "country": "United States"
+  },
+  {
+    "id": 623,
+    "title": "Chaplin",
+    "year": "1992",
+    "genre": [
+      "Biography",
+      "Comedy",
+      "Drama"
+    ],
+    "director": "Richard Attenborough",
+    "duration": "143 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BM2IyZmJiOTUtYTY4ZC00MDFiLWI4YTctYzAyOTVhNzJiZDJkXkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "The biography of Charlie Chaplin, filmmaker extraordinaire. From his formative years in England to his highest successes in America, Chaplin's life, work, and loves are followed. While his screen characters were extremely hilarious, the man behind \"The Little Tramp\" was constantly haunted by a sense of loss.",
+    "imdb": "7.5",
+    "imdbId": "tt0103939",
+    "language": "English, Italian, German",
+    "country": "United Kingdom, France, Italy, Japan, United States"
   }
 ]
