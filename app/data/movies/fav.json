@@ -8299,5 +8299,23 @@
     "imdbId": "tt0075963",
     "language": "Georgian, Russian",
     "country": "Soviet Union"
+  },
+  {
+    "id": 622,
+    "title": "A Scanner Darkly",
+    "year": "2006",
+    "genre": [
+      "Animation",
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Richard Linklater",
+    "duration": "100 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMDliMjJiYTYtYWU0YS00OTUzLWI4MjMtYmM1YzgxNDcwOTZjXkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "In a totalitarian society in a near future, the undercover detective Bob Arctor is working with a small time group of drug users trying to reach the big distributors of a brain-damaging drug called Substance D. His assignment is promoted by the recovery center New Path Corporation, and when Bob begins to lose his own identity and have schizophrenic behavior, he is submitted to tests to check his mental conditions.",
+    "imdb": "7.0",
+    "imdbId": "tt0405296",
+    "language": "English",
+    "country": "United States"
   }
 ]
