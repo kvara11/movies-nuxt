@@ -4176,24 +4176,6 @@
     "id": 237
   },
   {
-    "title": "Crossroads",
-    "year": "2002",
-    "genre": [
-      "Comedy",
-      "Drama",
-      "Romance"
-    ],
-    "director": "Tamra Davis",
-    "duration": "93 min",
-    "poster": "https://m.media-amazon.com/images/M/MV5BOGYwMjJmMjQtYWMzOS00YmE0LTk0NzItODVmNGYwN2U4NGVjXkEyXkFqcGc@._V1_SX300.jpg",
-    "description": "Three best friends get together and bury a box, making a pact to open it at midnight at their high school graduation. In the small town in Georgia that they live in, things soon change. One is little miss perfect, one is an engaged prom queen, and the other is a pregnant outcast. On the night of their graduation, they open the box and they strike up a conversation. Suddenly, one brings up the topic of her going to Los Angeles for a record contract audition. They all decide to go together and they leave. With a little money, they set out on the road with a guy named Ben. When one of them tells the other a rumor that he might be a homicidal maniac, they are all scared of him. When they reach Los Angeles, Lucy (Britney Spears) falls in love with Ben and against her father's wishes, she stays and she goes to the audition.",
-    "imdb": "3.9",
-    "imdbId": "tt0275022",
-    "language": "English",
-    "country": "United States",
-    "id": 238
-  },
-  {
     "title": "Hunger",
     "year": "2008",
     "genre": [
@@ -8350,5 +8332,23 @@
     "imdbId": "tt0263201",
     "language": "Georgian, Russian",
     "country": "Soviet Union"
+  },
+  {
+    "id": 238,
+    "title": "Crossroads",
+    "year": "1986",
+    "genre": [
+      "Drama",
+      "Music",
+      "Mystery"
+    ],
+    "director": "Walter Hill",
+    "duration": "99 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYzIwNDEzNWUtNzg4Mi00ZTZiLWJhODItNjdlMTBkMzhiMjk0XkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "Eugene is an extraordinary talent in classic guitar, but he dreams of being a famous Blues guitarist. So he investigates to find a storied lost song. He asks the legendary Blues musician Willie Brown to help him, but Willie demands to free him from the old-people's prison first and to really learn the blues on the way to its origin: Mississippi Delta. Eugene doesn't know yet about Willie's deal with the devil, that he now wants to revoke.",
+    "imdb": "7.1",
+    "imdbId": "tt0090888",
+    "language": "English",
+    "country": "United States"
   }
 ]
