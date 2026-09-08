@@ -8330,5 +8330,23 @@
     "imdbId": "tt0112573",
     "language": "English, French, Latin, Gaelic, Italian",
     "country": "United States"
+  },
+  {
+    "id": 629,
+    "title": "K-PAX",
+    "year": "2001",
+    "genre": [
+      "Drama",
+      "Mystery",
+      "Sci-Fi"
+    ],
+    "director": "Iain Softley",
+    "duration": "120 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZWU5MTJiNDMtMmI0Yy00MWRjLTgwZjktODEyY2NmZThhM2EwXkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "PROT is a patient at a mental hospital who claims to be from a faraway planet named K-PAX. His psychiatrist tries to help him, only to begin to doubt his own explanations.",
+    "imdb": "7.4",
+    "imdbId": "tt0272152",
+    "language": "English",
+    "country": "Germany, United States"
   }
 ]
