@@ -8348,5 +8348,75 @@
     "imdbId": "tt0272152",
     "language": "English",
     "country": "Germany, United States"
+  },
+  {
+    "id": 630,
+    "title": "The Invite",
+    "year": "2026",
+    "genre": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "director": "Olivia Wilde",
+    "duration": "107 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjI0MzJjMjctNmQzZi00Y2U4LWEwZGItMmE3NDUzNzk1YzY3XkEyXkFqcGc@._V1_QL75_UX380_CR0,15,380,562_.jpg",
+    "description": "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places.",
+    "imdb": "7.8",
+    "imdbId": "tt14173636",
+    "language": "English, Spanish",
+    "country": "United States"
+  },
+  {
+    "id": 631,
+    "title": "The Invite",
+    "year": "2026",
+    "genre": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "director": "Olivia Wilde",
+    "duration": "107 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjI0MzJjMjctNmQzZi00Y2U4LWEwZGItMmE3NDUzNzk1YzY3XkEyXkFqcGc@._V1_QL75_UX380_CR0,15,380,562_.jpg",
+    "description": "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places.",
+    "imdb": "7.8",
+    "imdbId": "tt14173636",
+    "language": "English, Spanish",
+    "country": "United States"
+  },
+  {
+    "id": 632,
+    "title": "Ready Player One",
+    "year": "2018",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "director": "Steven Spielberg",
+    "duration": "140 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNzVkMTgzODQtMWIwZC00NzE4LTgzZjYtMzAwM2I5OGZhNjE4XkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "description": "In the year 2045, the real world is a harsh place. The only time Wade Watts (Tye Sheridan) truly feels alive is when he escapes to the OASIS, an immersive virtual universe where most of humanity spends their days. In the OASIS, you can go anywhere, do anything, be anyone--the only limits are your own imagination. The OASIS was created by the brilliant and eccentric James Halliday (Mark Rylance), who left his immense fortune and total control of the Oasis to the winner of a three-part contest he designed to find a worthy heir. When Wade conquers the first challenge of the reality-bending treasure hunt, he and his friends--The High Five--are hurled into a fantastical universe of discovery and danger to save the OASIS.",
+    "imdb": "7.4",
+    "imdbId": "tt1677720",
+    "language": "English, Japanese",
+    "country": "United States, India, Singapore, Canada, United Kingdom, Japan, Australia"
+  },
+  {
+    "id": 633,
+    "title": "Samurai Rebellion",
+    "year": "1967",
+    "genre": [
+      "Drama"
+    ],
+    "director": "Masaki Kobayashi",
+    "duration": "128 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BY2MyYmQxODEtNDk3Mi00Mjc2LTgxMTMtNWQyZmIzYjA4MzgyXkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "During peace in 1725, aging swordsman Isaburo is living a henpecked life when his clan lord requests that Isaburo's son marry the lord's mistress, with whom he's displeased, even though she's born him a son. Isaburo wants to refuse, but his son Yogoro accepts the woman, Ichi, and they fall deeply in love. Their love renews Isaburo, so when the clan lord's elder son dies and the lord sends for Ichi to return to his side as mother of his heir, Isaburo opposes his lord. Yogoro and Ichi, who now have a baby daughter, stand with him. The clan orders their suicide, then sends soldiers to kill them. Isaburo's only hope is to take his case to Edo to expose the clan's cruelty. Can he?",
+    "imdb": "8.3",
+    "imdbId": "tt0061847",
+    "language": "Japanese",
+    "country": "Japan"
   }
 ]
