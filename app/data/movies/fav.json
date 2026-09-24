@@ -8403,5 +8403,22 @@
     "imdbId": "tt0364569",
     "language": "Korean",
     "country": "South Korea"
+  },
+  {
+    "id": 637,
+    "title": "Neighbors",
+    "year": "2018",
+    "genre": [
+      "Comedy",
+      "Drama"
+    ],
+    "director": "Gigisha Abashidze",
+    "duration": "90 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZThlZTgwNjAtNTdkMi00ODdkLTlkYjQtMWM2NTRmNTlhNmE5XkEyXkFqcGdeQXVyODgxMDAxMjY@._V1_SX300.jpg",
+    "description": "Lifetime friends and neighbors from the same year in Old Tbilisi turn into enemies and confront their fellow neighbor's family when an investor shows up to buy their yard and houses.",
+    "imdb": "7.7",
+    "imdbId": "tt9392532",
+    "language": "Georgian",
+    "country": "Georgia, North Macedonia"
   }
 ]
