@@ -3,6 +3,7 @@ import anim from '~/data/movies/anim.json'
 import comedy from '~/data/movies/comedy.json'
 import doc from '~/data/movies/doc.json'
 import fav from '~/data/movies/fav.json'
+import other from '~/data/movies/other.json'
 import series from '~/data/movies/series.json'
 import short from '~/data/movies/short.json'
 import genresData from '~/data/movies/genres.json'
@@ -27,7 +28,7 @@ interface Movie {
 
 const filterByGenre = ref(true)
 
-const sources = ['All', 'Fav', 'Doc', 'Anim', 'Comedy', 'Short', 'Series']
+const sources = ['All', 'Fav', 'Other', 'Doc', 'Anim', 'Comedy', 'Short', 'Series']
 const randomCount = 6;
 
 genresData.sort((a, b) => a.localeCompare(b));
@@ -140,6 +141,7 @@ const isMovieInRange = (movieYear: Movie['year'], queryRange: YearRange) => {
 const allMovies = computed(() => {
   const data: MovieWithId[] = [
     ...fav.map(m => ({ ...m as Movie, source: 'Fav' })),
+    ...other.map(m => ({ ...m as Movie, source: 'Other' })),
     ...doc.map(m => ({ ...m as Movie, source: 'Doc' })),
     ...anim.map(m => ({ ...m as Movie, source: 'Anim' })),
     ...comedy.map(m => ({ ...m as Movie, source: 'Comedy' })),

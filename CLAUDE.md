@@ -20,17 +20,17 @@ This is a Nuxt 4 app (`compatibilityVersion: 4`, so source lives under `app/`). 
 
 ### Movie data (`app/data/movies/`)
 
-- Movies are split across source lists: `fav.json`, `doc.json`, `anim.json`, `comedy.json`, `short.json`, `series.json`. Each file is a JSON array of objects shaped like OMDb output: `id`, `title`, `year`, `genre` (string array), `director`, `duration`, `poster` (URL), `description`, `imdb` (rating string), `imdbId`, `language`, `country`.
+- Movies are split across source lists: `fav.json`, `other.json` (lower-priority / underdog picks), `doc.json`, `anim.json`, `comedy.json`, `short.json`, `series.json`. Each file is a JSON array of objects shaped like OMDb output: `id`, `title`, `year`, `genre` (string array), `director`, `duration`, `poster` (URL), `description`, `imdb` (rating string), `imdbId`, `language`, `country`.
 - `increment.json` (`{ "id": N }`) holds the last assigned `id`. When you add a movie, give it `id = N + 1` and write the new value back to `increment.json`. Most commits in this repo do exactly that.
 - `genres.json` is the list that drives the genre filter chips. Any new genre on a movie must be added here too, or it cannot be filtered on.
 - `year` is a string and can be a range for series (e.g. `"2015–2019"`, which uses an en dash). Many fields use `"N/A"` where OMDb had no value.
-- `import.json` and `errors.json` are empty leftovers from an OMDb import script (`api.js`, removed in commit `ed865aa`).
+- `server/api.js` is a standalone Node import script, not a Nuxt route: run it with `node server/api`. You edit `targetFile` and `needImdbIds` at the top, and it fetches each ID from OMDb and appends the movies to the target list. It also assigns the next id from `increment.json` and adds any new genres to `genres.json`. It must stay in `server/`, because its data path (`../app/data/movies/`) is relative to its own folder. `import.json` and `errors.json` are currently unused.
 
 ### Home page (`app/pages/index.vue`)
 
 All filtering is client-side over data imported statically from the JSON files.
 
-- It imports all six lists and tags each movie with a `source` (`Fav`, `Doc`, …). It then dedupes by `imdbId || title`: the first occurrence wins, in the order fav → doc → anim → comedy → short → series.
+- It imports all seven lists and tags each movie with a `source` (`Fav`, `Other`, `Doc`, …). It then dedupes by `imdbId || title`: the first occurrence wins, in the order fav → other → doc → anim → comedy → short → series. Adding a new list means importing it, adding a line to `allMovies`, and adding its name to `sources`.
 - By default the list is sorted by title. The "desc" toggle sorts by `id` descending instead, which shows the most recently added movies first.
 - A toggle switches the category chips between genres (from `genres.json`) and sources.
 - The search box matches title, year, country, director and genres. It also accepts a `year:YYYY`, `year:YYYY-YYYY` or open-ended `year:YYYY-` token. That token is parsed out of the query and matched by range overlap against the movie's year range.
