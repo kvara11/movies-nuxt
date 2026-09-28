@@ -83,4 +83,24 @@ main {
   color: var(--text-secondary);
   font-size: 0.875rem;
 }
+
+@media (max-width: 640px) {
+  .main-header {
+    padding: 0.75rem 0;
+  }
+
+  .container {
+    padding: 0 0.75rem;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 1.375rem;
+  }
+
+  .main-footer {
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+  }
+}
 </style>

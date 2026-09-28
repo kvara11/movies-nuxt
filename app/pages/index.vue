@@ -28,6 +28,7 @@ interface Movie {
 const filterByGenre = ref(true)
 
 const sources = ['All', 'Fav', 'Doc', 'Anim', 'Comedy', 'Short', 'Series']
+const randomCount = 6;
 
 genresData.sort((a, b) => a.localeCompare(b));
 const categories = computed(() => {
@@ -72,7 +73,7 @@ const closeModal = () => {
 
 // Process and combine movies
 interface MovieWithId extends Movie {
-  id: string;
+  id: number;
   source: string;
 }
 
@@ -224,7 +225,7 @@ const pickRandomMovies = () => {
 
   randomMovies.value = pool
     .sort(() => Math.random() - 0.5)
-    .slice(0, 4)
+    .slice(0, randomCount)
 }
 
 const clearRandomMovies = () => {
@@ -275,7 +276,7 @@ watch([selectedCategory, searchQuery, filterByGenre], () => {
           </div>
 
           <div class="random-btn-wrap">
-            <button class="random-btn" type="button" aria-label="Pick 4 random movies" @click="pickRandomMovies">
+            <button class="random-btn" type="button" aria-label="Pick 6 random movies" @click="pickRandomMovies">
               <img :src="randomIcon" alt="" class="random-icon" aria-hidden="true" />
             </button>
 
@@ -557,26 +558,56 @@ watch([selectedCategory, searchQuery, filterByGenre], () => {
 }
 
 /* Responsive adjustments */
-@media (max-width: 640px) {
-  .filter-controls {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .switch-wrapper {
-    width: 100%;
-    max-width: 12rem;
-  }
-
+@media (max-width: 900px) {
   .movie-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 1rem;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
+  .container {
+    padding: 0 0.75rem;
+  }
+
+  .filter-controls {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+  }
+
+  .left-filters {
+    gap: 0.75rem;
+  }
+
+  .right-filters {
+    flex: 1 1 100%;
+  }
+
+  .search-wrapper {
+    flex: 1;
+    width: auto;
+  }
+
+  .search-input,
+  .random-btn {
+    height: 2.25rem;
+    font-size: 16px; /* prevents iOS zoom on focus */
+  }
+
+  .switch-wrapper {
+    width: 8.5rem;
+  }
+
   .movie-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.625rem;
+    margin-top: 0.25rem;
+  }
+
+  .scroll-top-btn {
+    right: 0.75rem;
+    bottom: 0.75rem;
   }
 }
 </style>

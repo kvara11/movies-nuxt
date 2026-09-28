@@ -118,4 +118,27 @@ const scroll = (direction: 'left' | 'right') => {
   border-color: var(--accent-color);
   box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.3);
 }
+
+@media (max-width: 640px) {
+  .category-filter-wrapper {
+    top: 3.5rem; /* compact mobile header */
+    margin: 0.5rem 0 0.75rem;
+    padding: 0.5rem 0;
+  }
+
+  /* Touch users swipe the chips; arrows just eat space */
+  .arrow-btn {
+    display: none;
+  }
+
+  .scroll-container {
+    gap: 0.5rem;
+    padding: 0.25rem 0;
+  }
+
+  .category-btn {
+    padding: 0.4rem 0.9rem;
+    font-size: 0.8125rem;
+  }
+}
 </style>

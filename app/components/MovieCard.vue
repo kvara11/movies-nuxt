@@ -126,4 +126,54 @@ defineProps<{
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+/* Hover lift/zoom only on devices that actually hover */
+@media (hover: none) {
+  .movie-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .movie-card:hover .poster-container img {
+    transform: none;
+  }
+
+  .movie-card:active {
+    transform: scale(0.97);
+  }
+}
+
+/* Compact poster-first card for the 3-column mobile grid */
+@media (max-width: 640px) {
+  .movie-card {
+    border-radius: 0.625rem;
+  }
+
+  .rating-badge {
+    top: 0.3rem;
+    right: 0.3rem;
+    padding: 0.125rem 0.35rem;
+    border-radius: 0.4rem;
+    font-size: 0.6875rem;
+  }
+
+  .movie-info {
+    padding: 0.45rem 0.5rem 0.55rem;
+    gap: 0.15rem;
+  }
+
+  .title {
+    font-size: 0.8125rem;
+    line-height: 1.25;
+  }
+
+  .meta {
+    font-size: 0.6875rem;
+  }
+
+  .dot,
+  .genres {
+    display: none;
+  }
+}
 </style>
