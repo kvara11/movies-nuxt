@@ -34,7 +34,7 @@ All filtering is client-side over data imported statically from the JSON files.
 - By default the list is sorted by title. The "desc" toggle sorts by `id` descending instead, which shows the most recently added movies first.
 - A toggle switches the category chips between genres (from `genres.json`) and sources.
 - The search box matches title, year, country, director and genres. It also accepts a `year:YYYY`, `year:YYYY-YYYY` or open-ended `year:YYYY-` token. That token is parsed out of the query and matched by range overlap against the movie's year range.
-- The random button picks 4 movies from the current filtered set.
+- The random button (keyboard shortcut `R`) picks `randomCount` movies from the current filtered set.
 
 Components in `app/components/` are auto-imported: `MovieCard` emits `show-details`, `MovieModal` takes `movie` and `isOpen` and emits `close`, and `CategoryFilter` uses `v-model:selectedCategory`.
 

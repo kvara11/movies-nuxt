@@ -242,6 +242,28 @@ const isRandomMode = computed(() => randomMovies.value !== null)
 watch([selectedCategory, searchQuery, filterByGenre], () => {
   randomMovies.value = null
 })
+
+// "R" shortcut for the random button
+const onShortcutKeydown = (e: KeyboardEvent) => {
+  if (e.key.toLowerCase() !== 'r' || e.repeat || e.ctrlKey || e.metaKey || e.altKey) {
+    return
+  }
+
+  const target = e.target as HTMLElement | null
+  if (target?.isContentEditable || ['INPUT', 'TEXTAREA', 'SELECT'].includes(target?.tagName ?? '')) {
+    return
+  }
+
+  if (isModalOpen.value) {
+    return
+  }
+
+  e.preventDefault()
+  pickRandomMovies()
+}
+
+onMounted(() => window.addEventListener('keydown', onShortcutKeydown))
+onBeforeUnmount(() => window.removeEventListener('keydown', onShortcutKeydown))
 </script>
 
 <template>
@@ -276,7 +298,7 @@ watch([selectedCategory, searchQuery, filterByGenre], () => {
           </div>
 
           <div class="random-btn-wrap">
-            <button class="random-btn" type="button" aria-label="Pick 6 random movies" @click="pickRandomMovies">
+            <button class="random-btn" type="button" aria-label="Pick 6 random movies" aria-keyshortcuts="R" title="Random movies (R)" @click="pickRandomMovies">
               <img :src="randomIcon" alt="" class="random-icon" aria-hidden="true" />
             </button>
 
