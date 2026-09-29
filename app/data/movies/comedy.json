@@ -792,6 +792,42 @@
     "id": 191
   },
   {
+    "title": "2 Guns",
+    "year": "2013",
+    "genre": [
+      "Action",
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Baltasar Kormákur",
+    "duration": "109 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTQ5MTgzNDg4OF5BMl5BanBnXkFtZTcwMjAyODEzOQ@@._V1_SX300.jpg",
+    "description": "Robert Trench, an undercover DEA agent, takes advantage of gunman Michael Stigman's idea to rob a bank to bust him and a mob boss. However, it proves too successful with much more money seized than anticipated with Trench's forces not stopping the getaway. Complicating things still more, Stigman turns out to be a Naval Intelligence agent who shoots Trench and takes the money. The interservice debacle suddenly finds Trench and Stigman in a bloody web of corrupt clandestine rivalries as they are hunted, blackmailed and isolated for the money on both sides of the law. Now, the fugitives must work together to find a way out of this situation with no one to turn to but themselves.",
+    "imdb": "6.7",
+    "imdbId": "tt1272878",
+    "language": "English, Spanish",
+    "country": "United States",
+    "id": 169
+  },
+  {
+    "title": "A Thousand Words",
+    "year": "2012",
+    "genre": [
+      "Comedy",
+      "Drama",
+      "Fantasy"
+    ],
+    "director": "Brian Robbins",
+    "duration": "91 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTAzODAwODkwMjBeQTJeQWpwZ15BbWU3MDI4MDE3NDc@._V1_SX300.jpg",
+    "description": "Jack McCall (Eddie Murphy) finds an unusual tree in his yard after an encounter with a spiritual guru. After discovering that with each word he speaks, a leaf drops from the tree, Jack refuses to speak at all, as silence will keep the tree, and him, alive. However, his elective mutism affects his work, his marriage, and his friendships. Can he figure out an alternative method of survival, or does he just need to live the rest of his life to the fullest?",
+    "imdb": "5.9",
+    "imdbId": "tt0763831",
+    "language": "English",
+    "country": "United States",
+    "id": 393
+  },
+  {
     "title": "Get Hard",
     "year": "2015",
     "genre": [
