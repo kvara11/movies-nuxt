@@ -1421,5 +1421,92 @@
     "imdbId": "tt0405743",
     "language": "German",
     "country": "Germany"
+  },
+  {
+    "title": "Crazy, Stupid, Love.",
+    "year": "2011",
+    "genre": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "director": "Glenn Ficarra, John Requa",
+    "duration": "118 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTg2MjkwMTM0NF5BMl5BanBnXkFtZTcwMzc4NDg2NQ@@._V1_SX300.jpg",
+    "description": "Cal (Steve Carell) and Emily (Julianne Moore) have the perfect life together living the American dream... until Emily asks for a divorce. Now Cal, Mr Husband, has to navigate the single scene with a little help from his professional bachelor friend Jacob Palmer (Ryan Gosling). Make that a lot of help...",
+    "imdb": "7.4",
+    "imdbId": "tt1570728",
+    "language": "English",
+    "country": "United States",
+    "id": 346
+  },
+  {
+    "title": "Danny Collins",
+    "year": "2015",
+    "genre": [
+      "Comedy",
+      "Drama",
+      "Music"
+    ],
+    "director": "Dan Fogelman",
+    "duration": "106 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNDk5NTYxOTk2MV5BMl5BanBnXkFtZTgwMzIxMjE0MzE@._V1_SX300.jpg",
+    "description": "Inspired by a true story, Al Pacino stars as aging 1970s rocker Danny Collins, who can't give up his hard-living ways. But when his manager (Christopher Plummer) uncovers a 40 year-old undelivered letter written to him by John Lennon, he decides to change course and embarks on a heartfelt journey to rediscover his family, find true love and begin a second act.",
+    "imdb": "7.0",
+    "imdbId": "tt1772288",
+    "language": "English",
+    "country": "United States",
+    "id": 330
+  },
+  {
+    "title": "Demolition",
+    "year": "2015",
+    "genre": [
+      "Comedy",
+      "Drama"
+    ],
+    "director": "Jean-Marc Vallée",
+    "duration": "101 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTEwYmRiZWMtOTM4OS00YzA0LTgyMWUtOTk5NzZkZDBmNWE0XkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "Davis (Jake Gyllenhaal), a successful private equity fund partner, struggles after losing his wife in a tragic car crash. Despite pressure from his father-in-law, Phil (Chris Cooper), to pull it together, Davis continues to unravel. What starts as a complaint letter to a vending machine company turns into a series of letters revealing startling personal admissions. Davis' letters catch the attention of customer service rep, Karen (Naomi Watts), and, amidst emotional and financial burdens of her own, the two form an unlikely connection. With the help of Karen and her son Chris (Judah Lewis), Davis starts to rebuild, beginning with the demolition of the life he once knew.",
+    "imdb": "7.0",
+    "imdbId": "tt1172049",
+    "language": "English",
+    "country": "United States",
+    "id": 200
+  },
+  {
+    "title": "Don Jon",
+    "year": "2013",
+    "genre": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "director": "Joseph Gordon-Levitt",
+    "duration": "90 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNDgwMTU2NDctODI0YS00ZmIxLWFiNjEtZDI2ZGE3NWFlZDY2XkEyXkFqcGc@._V1_SX300.jpg",
+    "description": "Jon Martello objectifies everything in his life: his apartment, his car, his family, his church, and, of course, women. His buddies even call him Don Jon because of his ability to pull \"10s\" every weekend without fail. Yet even the finest flings don't compare to the transcendent bliss he achieves alone in front of the computer watching pornography. Dissatisfied, he embarks on a journey to find a more gratifying sex life, but ends up learning larger lessons of life and love through relationships with two very different women.",
+    "imdb": "6.5",
+    "imdbId": "tt2229499",
+    "language": "English",
+    "country": "United States",
+    "id": 12
+  },
+  {
+    "title": "Everybody Wants Some!!",
+    "year": "2016",
+    "genre": [
+      "Comedy"
+    ],
+    "director": "Richard Linklater",
+    "duration": "117 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTk2NDcyNDE5N15BMl5BanBnXkFtZTgwNDA0MzQ1NzE@._V1_SX300.jpg",
+    "description": "In Texas in the fall of 1980, college freshman Jake Bradford, a hotshot pitcher in high school, moves into an off-campus house with other members of the college baseball team. He meets several teammates, including his roommate Billy, who has been nicknamed \"Beuter\" because of his Deep Southern accent. He joins Finnegan, Roper, Dale, and Plummer cruising the campus by car, looking for women..",
+    "imdb": "6.9",
+    "imdbId": "tt2937696",
+    "language": "English",
+    "country": "United States",
+    "id": 215
   }
 ]
