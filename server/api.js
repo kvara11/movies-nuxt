@@ -23,7 +23,7 @@ const __dataPath = '../app/data/movies/';
 let targetFile = 'other.json';
 
 const needImdbIds = [
-  'tt0064276'
+  '',
 ];
 
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -35,11 +35,30 @@ async function fetchMovies() {
   let genres = JSON.parse(
     fs.readFileSync(path.join(__dirname, __dataPath + '/genres.json'), 'utf8')
   );
+  const fileNames = [
+    'anim.json',
+    'comedy.json',
+    'doc.json',
+    'fav.json',
+    'other.json',
+    'series.json',
+    'short.json'
+  ];
 
+  // imdbId -> file it already lives in, across every collection
+  const existingIds = new Map();
+  for (const fileName of fileNames) {
+    const filePath = path.join(__dirname, __dataPath + fileName);
+    if (!fs.existsSync(filePath)) continue;
+
+    const movies = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    for (const movie of movies) {
+      if (movie.imdbId) existingIds.set(movie.imdbId, fileName);
+    }
+  }
+
+  
   const incrementPath = path.join(__dirname, __dataPath + 'increment.json');
-  const incrementValue = JSON.parse(fs.readFileSync(incrementPath, 'utf8'));
-  const newId = ++incrementValue.id;
-  console.log(newId);
   
   try {
 
@@ -51,7 +70,16 @@ async function fetchMovies() {
         console.log('Id is empty');
         continue;
       }
-      
+
+      if (existingIds.has(id)) {
+        console.error(`Already exists: ${id} (in ${existingIds.get(id)})`);
+        continue;
+      }
+
+      const incrementValue = JSON.parse(fs.readFileSync(incrementPath, 'utf8'));
+      const newId = ++incrementValue.id;
+      console.log(newId);
+        
       const omdbResponse = await axios.get('https://www.omdbapi.com/', {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -95,6 +123,7 @@ async function fetchMovies() {
         }
 
         allResults.push(myMovieObj)
+        existingIds.set(id, targetFile) // catch the same id listed twice in needImdbIds
 
       } else {
         errors.push({
