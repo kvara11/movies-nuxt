@@ -7448,5 +7448,23 @@
     "imdbId": "tt9392532",
     "language": "Georgian",
     "country": "Georgia, North Macedonia"
+  },
+  {
+    "id": 641,
+    "title": "Frankenstein",
+    "year": "2025",
+    "genre": [
+      "Drama",
+      "Fantasy",
+      "Horror"
+    ],
+    "director": "Guillermo del Toro",
+    "duration": "149 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYzYzNDYxMTQtMTU4OS00MTdlLThhMTQtZjI4NGJmMTZmNmRiXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "description": "Oscar-winning director Guillermo del Toro adapts Mary Shelley's classic tale of Victor Frankenstein, a brilliant but egotistical scientist who brings a creature to life in a monstrous experiment that ultimately leads to the undoing of both the creator and his tragic creation.",
+    "imdb": "7.4",
+    "imdbId": "tt1312221",
+    "language": "English, Danish, French",
+    "country": "Mexico, United States, Canada"
   }
 ]

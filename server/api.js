@@ -20,7 +20,7 @@ const __dataPath = '../app/data/movies/';
 
 // <><><><><><><>  only change <<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 /** @type {TargetFile} */
-let targetFile = 'other.json';
+let targetFile = 'fav.json';
 
 const needImdbIds = [
   '',
@@ -59,7 +59,8 @@ async function fetchMovies() {
 
   
   const incrementPath = path.join(__dirname, __dataPath + 'increment.json');
-  
+  let lastId = JSON.parse(fs.readFileSync(incrementPath, 'utf8')).id;
+
   try {
 
     // http://www.omdbapi.com/?i=tt1166827&plot=full
@@ -76,10 +77,6 @@ async function fetchMovies() {
         continue;
       }
 
-      const incrementValue = JSON.parse(fs.readFileSync(incrementPath, 'utf8'));
-      const newId = ++incrementValue.id;
-      console.log(newId);
-        
       const omdbResponse = await axios.get('https://www.omdbapi.com/', {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -96,7 +93,8 @@ async function fetchMovies() {
 
       if (omdbResponse.status == 200 && omdbResponse.data) {
 
-        console.log(`Fetched: ${id}`)
+        const newId = ++lastId;
+        console.log(`Fetched: ${id} -> id ${newId}`)
 
         const movie = omdbResponse.data;
         const movieGenres = movie.Genre.split(',').map(g => g.trim());
@@ -160,7 +158,7 @@ async function fetchMovies() {
     fs.writeFileSync(targetPath, JSON.stringify(updatedMovies, null, 2));
     // fs.writeFileSync(errorPath, JSON.stringify(updatedErrors, null, 2));
     fs.writeFileSync(genresPath, JSON.stringify(genres, null, 2));
-    fs.writeFileSync(incrementPath, JSON.stringify({ id: newId }, null, 2));
+    fs.writeFileSync(incrementPath, JSON.stringify({ id: lastId }, null, 2));
 
     console.error('DONE << ')
   }
