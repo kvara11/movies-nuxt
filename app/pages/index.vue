@@ -103,26 +103,30 @@ const getMovieYearRange = (yearValue: Movie['year']): YearRange | null => {
   return { start, end }
 }
 
-const extractDateFilter = (rawQuery: string) => {
-  const dateTokenRegex = /(?:^|\s)(?:year|year):(\d{4})?(?:\s*[-–—]\s*(\d{4})?)?(?=\s|$)/i
-  const match = rawQuery.match(dateTokenRegex)
+// Year range inputs beside the search box; only complete 4-digit years count
+const yearFrom = ref('')
+const yearTo = ref('')
 
-  if (!match) {
-    return {
-      textQuery: rawQuery.trim().toLowerCase(),
-      yearRange: null as YearRange | null
-    }
-  }
-
-  const start = match[1] ? Number.parseInt(match[1], 10) : null
-  const end = match[2] ? Number.parseInt(match[2], 10) : null
-  const yearRange = start === null && end === null ? null : { start, end }
-
-  return {
-    textQuery: rawQuery.replace(match[0], ' ').trim().toLowerCase(),
-    yearRange
-  }
+const parseYearInput = (value: string) => {
+  const raw = value.trim()
+  return /^\d{4}$/.test(raw) ? Number.parseInt(raw, 10) : null
 }
+
+const yearRange = computed<YearRange | null>(() => {
+  const start = parseYearInput(yearFrom.value)
+  const end = parseYearInput(yearTo.value)
+
+  if (start === null && end === null) {
+    return null
+  }
+
+  // tolerate a reversed range (e.g. 2010 – 2000)
+  if (start !== null && end !== null && start > end) {
+    return { start: end, end: start }
+  }
+
+  return { start, end }
+})
 
 const isMovieInRange = (movieYear: Movie['year'], queryRange: YearRange) => {
   const movieRange = getMovieYearRange(movieYear)
@@ -192,11 +196,12 @@ const filteredMovies = computed(() => {
     }
   }
 
-  const { textQuery, yearRange } = extractDateFilter(searchQuery.value)
-
-  if (yearRange) {
-    movies = movies.filter(movie => isMovieInRange(movie.year, yearRange))
+  const range = yearRange.value
+  if (range) {
+    movies = movies.filter(movie => isMovieInRange(movie.year, range))
   }
+
+  const textQuery = searchQuery.value.trim().toLowerCase()
 
   if (!textQuery) {
     return movies
@@ -241,7 +246,7 @@ const scrollToTop = () => {
 const displayedMovies = computed(() => randomMovies.value ?? filteredMovies.value)
 const isRandomMode = computed(() => randomMovies.value !== null)
 
-watch([selectedCategory, searchQuery, filterByGenre], () => {
+watch([selectedCategory, searchQuery, filterByGenre, yearRange], () => {
   randomMovies.value = null
 })
 
@@ -294,6 +299,14 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onShortcutKeydown))
         </div>
 
         <div class="right-filters">
+          <div class="year-range" title="Year range">
+            <input v-model="yearFrom" type="text" inputmode="numeric" maxlength="4" class="year-input"
+              placeholder="From" aria-label="From year" />
+            <span class="year-sep" aria-hidden="true">–</span>
+            <input v-model="yearTo" type="text" inputmode="numeric" maxlength="4" class="year-input"
+              placeholder="To" aria-label="To year" />
+          </div>
+
           <div class="search-wrapper">
             <input v-model="searchQuery" type="search" class="search-input" placeholder="Search movies..."
               aria-label="Search movies" />
@@ -400,6 +413,41 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onShortcutKeydown))
 
 .search-input:focus {
   border-color: var(--accent-color);
+}
+
+.year-range {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  height: 2rem;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--card-bg);
+  padding: 0 0.6rem;
+}
+
+.year-range:focus-within {
+  border-color: var(--accent-color);
+}
+
+.year-input {
+  width: 2.6rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--text-primary);
+  font: inherit;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.year-input::placeholder {
+  color: var(--text-secondary);
+}
+
+.year-sep {
+  color: var(--text-secondary);
+  padding: 0 0.15rem;
 }
 
 .random-btn {
@@ -612,6 +660,17 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onShortcutKeydown))
   .search-wrapper {
     flex: 1;
     width: auto;
+    min-width: 0;
+  }
+
+  .year-range {
+    height: 2.25rem;
+    padding: 0 0.45rem;
+  }
+
+  .year-input {
+    width: 2.5rem;
+    font-size: 16px; /* prevents iOS zoom on focus */
   }
 
   .search-input,

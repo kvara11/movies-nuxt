@@ -33,7 +33,7 @@ All filtering is client-side over data imported statically from the JSON files.
 - It imports all seven lists and tags each movie with a `source` (`Fav`, `Other`, `Doc`, …). It then dedupes by `imdbId || title`: the first occurrence wins, in the order fav → other → doc → anim → comedy → short → series. Adding a new list means importing it, adding a line to `allMovies`, and adding its name to `sources`.
 - By default the list is sorted by title. The "desc" toggle sorts by `id` descending instead, which shows the most recently added movies first.
 - A toggle switches the category chips between genres (from `genres.json`) and sources.
-- The search box matches title, year, country, director and genres. It also accepts a `year:YYYY`, `year:YYYY-YYYY` or open-ended `year:YYYY-` token. That token is parsed out of the query and matched by range overlap against the movie's year range.
+- The search box matches title, year, country, director and genres as plain text. Next to it are From/To year inputs (`yearFrom`/`yearTo`). Each only takes effect once it holds a full 4-digit year, either one can be left empty, and a reversed range is swapped. The range is matched by overlap against the movie's year range, so a `2015–2019` series matches 2017.
 - The random button (keyboard shortcut `R`) picks `randomCount` movies from the current filtered set.
 
 Components in `app/components/` are auto-imported: `MovieCard` emits `show-details`, `MovieModal` takes `movie` and `isOpen` and emits `close`, and `CategoryFilter` uses `v-model:selectedCategory`.
