@@ -513,8 +513,9 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onShortcutKeydown))
 
 .movie-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 2rem;
+  /* 5 columns in the 1200px container (6 × 200px + gaps won't fit) */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
   margin-top: 1rem;
 }
 
