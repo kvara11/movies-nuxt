@@ -1,4 +1,6 @@
 <script setup lang="ts">
+useHead({ title: 'Add Movie' })
+
 interface AddMovieForm {
   secret: string
   title: string
