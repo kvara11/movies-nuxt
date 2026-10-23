@@ -6298,5 +6298,23 @@
     "imdbId": "tt0114746",
     "language": "English, French, Latin, Spanish, German",
     "country": "United States"
+  },
+  {
+    "id": 645,
+    "title": "King Arthur",
+    "year": "2004",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "director": "Antoine Fuqua",
+    "duration": "126 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTk4MTk1NjI0OV5BMl5BanBnXkFtZTcwNDQxOTUyMQ@@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "description": "In 400 AD, the Roman Empire extends to Britain and the Romans become impressed with the fight skills of the warrior Sarmatian people, which are spared, but have to send their sons to serve Rome in the cavalry for 15 years. Only after these services, these knights are free to return home. King Arthur and the Knights of the Round Table have their last mission before achieving their freedom.",
+    "imdb": "6.3",
+    "imdbId": "tt0349683",
+    "language": "English, Latin, Irish Gaelic, Welsh, Gaelic",
+    "country": "Ireland, United Kingdom, United States"
   }
 ]
