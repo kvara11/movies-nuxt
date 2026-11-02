@@ -709,5 +709,22 @@
     "imdbId": "tt3032476",
     "language": "English, Spanish, Vietnamese",
     "country": "United States"
+  },
+  {
+    "id": 646,
+    "title": "Brooklyn Nine-Nine",
+    "year": "2013–2021",
+    "genre": [
+      "Comedy",
+      "Crime"
+    ],
+    "director": "N/A",
+    "duration": "22 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNzBiODQxZTUtNjc0MC00Yzc1LThmYTMtN2YwYTU3NjgxMmI4XkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "description": "Captain Ray Holt takes over Brooklyn's 99th precinct, which includes Detective Jake Peralta, a talented but carefree detective who's used b wy to doing whatever he wants. I no get The other employees of the 99th precinct include Detective Amy Santiago, Jake's over achieving and competitive partner; Detective Rosa Diaz, a tough and kept to herself coworker; Detective Charles Boyle, Jake's best friend who also has crush on Rosa; Detective Sergeant Terry Jeffords, who was recently taken off the field after the birth of his twin girls; and he mom Gina Linetti, the precinct's sarcastic administrator.",
+    "imdb": "8.4",
+    "imdbId": "tt2467372",
+    "language": "English",
+    "country": "United States"
   }
 ]
