@@ -6316,5 +6316,23 @@
     "imdbId": "tt0349683",
     "language": "English, Latin, Irish Gaelic, Welsh, Gaelic",
     "country": "Ireland, United Kingdom, United States"
+  },
+  {
+    "id": 647,
+    "title": "The Name of the Rose",
+    "year": "1986",
+    "genre": [
+      "Drama",
+      "Mystery",
+      "Thriller"
+    ],
+    "director": "Jean-Jacques Annaud",
+    "duration": "130 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BODcwODk2NmQtMjg0My00NzcxLWFhNTYtNjM4ODUxM2VjNTI2XkEyXkFqcGc@._V1_QL75_UX380_CR0,4,380,562_.jpg",
+    "description": "14th century Franciscan monk William of Baskerville and his young novice arrive at a conference to find that several monks have been murdered under mysterious circumstances. To solve the crimes, William must rise up against the Church's authority and fight the shadowy conspiracy of monastery monks using only his intelligence which is considerable.",
+    "imdb": "7.7",
+    "imdbId": "tt0091605",
+    "language": "English, Latin",
+    "country": "West Germany, Italy, France"
   }
 ]
