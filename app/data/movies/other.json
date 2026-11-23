@@ -1488,5 +1488,41 @@
     "language": "English, Spanish, Russian",
     "country": "United States",
     "id": 168
+  },
+  {
+    "id": 649,
+    "title": "Midsommar",
+    "year": "2019",
+    "genre": [
+      "Drama",
+      "Horror",
+      "Mystery"
+    ],
+    "director": "Ari Aster",
+    "duration": "148 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMzQxNzQzOTQwM15BMl5BanBnXkFtZTgwMDQ2NTcwODM@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "description": "Dani (Florence Pugh) and Christian (Jack Reynor) are a young American couple with a relationship on the brink of falling apart. But after a family tragedy keeps them together, Christian invites a grieving Dani to join him and his friends on a trip to a once-in-a-lifetime midsummer festival in a remote Swedish village. What begins as a carefree summer holiday in the North European land of eternal sunlight takes a sinister turn when the insular villagers invite their guests to partake in festivities that render the pastoral paradise increasingly unnerving and viscerally disturbing.",
+    "imdb": "7.1",
+    "imdbId": "tt8772262",
+    "language": "English, Swedish",
+    "country": "United States, Sweden"
+  },
+  {
+    "id": 650,
+    "title": "The Substance",
+    "year": "2024",
+    "genre": [
+      "Drama",
+      "Horror",
+      "Sci-Fi"
+    ],
+    "director": "Coralie Fargeat",
+    "duration": "141 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZDQ1NGE5MGMtYzdlZC00ODExLWJlMDMtNWU4NjA5OWYwMDEwXkEyXkFqcGc@._V1_QL75_UY562_CR2,0,380,562_.jpg",
+    "description": "Have you ever dreamed of a better version of yourself? You. Only better in every way. Seriously. You've got to try this new product. It's called the Substance. It changed my life. It generates another you. A new, younger, more beautiful, more perfect you. And there's only one rule: you share time. One week for you. One week for the new you. Seven days each. A perfect balance. Easy, right? If you respect the balance...what could possibly go wrong?",
+    "imdb": "7.2",
+    "imdbId": "tt17526714",
+    "language": "English",
+    "country": "United Kingdom, France"
   }
 ]

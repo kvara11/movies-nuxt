@@ -6334,5 +6334,23 @@
     "imdbId": "tt0091605",
     "language": "English, Latin",
     "country": "West Germany, Italy, France"
+  },
+  {
+    "id": 648,
+    "title": "The Odyssey",
+    "year": "2026",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "director": "Christopher Nolan",
+    "duration": "172 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTcyNmJlZmQtNDUwYy00NDBjLTg1NGQtYTY2Y2UxMWM3NmI1XkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "description": "After the Trojan War, Odysseus faces a dangerous voyage back to Ithaca, meeting creatures like the Cyclops Polyphemus, Sirens, and Calypso along the way.",
+    "imdb": "8.4",
+    "imdbId": "tt33764258",
+    "language": "English, Greek",
+    "country": "United Kingdom, United States, Canada, New Zealand, Iceland"
   }
 ]
