@@ -86,5 +86,23 @@
     "language": "Russian",
     "country": "Soviet Union",
     "id": 579
+  },
+  {
+    "id": 651,
+    "title": "The Wonderful Story of Henry Sugar",
+    "year": "2023",
+    "genre": [
+      "Short",
+      "Adventure",
+      "Comedy"
+    ],
+    "director": "Wes Anderson",
+    "duration": "40 min",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZjA1ZjliMGYtNTcyYS00YjA3LWI3NGItMjdmNzE1NjUyY2RmXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "description": "Henry Sugar, a wealthy layabout, discovers a book while visiting a friend. In it is described a method to \"see without eyes\", a concentration technique that allows a person to see through coverings, pages, etc. He immediately sees a use for this.",
+    "imdb": "7.4",
+    "imdbId": "tt16968450",
+    "language": "English",
+    "country": "United States, United Kingdom"
   }
 ]
